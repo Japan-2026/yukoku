@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YUKOKU RENGO FAN SITE | Neo-Porte Support</title>
     <!-- Favicon -->
-    <link rel="icon" href="fabicon.png" type="image/png">
+    <link rel="icon" href="https://drive.google.com/uc?id=1E0LQgnDbIlcHdkqocwMeTtESmYudsQ-l" type="image/png">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
     <style>
@@ -14,6 +14,8 @@
         :root {
             --yukoku-red: #e11d48;
             --yukoku-dark: #0a0a0a;
+            /* ロゴURLの共通変数 */
+            --logo-url: url('https://drive.google.com/uc?id=1E0LQgnDbIlcHdkqocwMeTtESmYudsQ-l');
         }
 
         body {
@@ -68,6 +70,14 @@
             height: 100%;
             background: var(--yukoku-red);
         }
+
+        /* メンバーカードの背景用 */
+        .member-bg-logo {
+            background-image: var(--logo-url);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
     </style>
 </head>
 <body class="overflow-x-hidden">
@@ -76,7 +86,7 @@
     <nav class="fixed top-0 w-full z-[100] glass-panel border-b border-white/5">
         <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
             <div class="flex items-center gap-3">
-                <img src="fabicon.png" alt="Logo" class="w-10 h-10 logo-glow">
+                <img src="https://drive.google.com/uc?id=1E0LQgnDbIlcHdkqocwMeTtESmYudsQ-l" alt="Logo" class="w-10 h-10 logo-glow object-contain">
                 <div class="text-xl font-black tracking-tighter font-oswald uppercase hidden sm:block">
                     YUKOKU <span class="text-rose-600">RENGO</span>
                 </div>
@@ -105,7 +115,7 @@
         
         <div class="relative z-20 text-center px-4 max-w-4xl">
             <div class="mb-8 inline-block animate-[float_4s_ease-in-out_infinite]">
-                <img src="fabicon.png" alt="Large Logo" class="w-24 h-24 md:w-32 md:h-32 logo-glow mx-auto">
+                <img src="https://drive.google.com/uc?id=1E0LQgnDbIlcHdkqocwMeTtESmYudsQ-l" alt="Large Logo" class="w-24 h-24 md:w-32 md:h-32 logo-glow mx-auto object-contain">
             </div>
             
             <div class="mb-4 inline-flex items-center gap-2 px-3 py-1 border border-rose-600/30 rounded-full bg-rose-600/10 text-rose-500 text-[10px] font-bold tracking-[0.2em] uppercase">
@@ -225,7 +235,7 @@
                         <div>
                             <h4 class="text-sm font-bold tracking-[0.2em] mb-2 opacity-80 uppercase text-rose-200">Recruitment Schedule</h4>
                             <div class="text-4xl font-black mb-4 italic font-oswald">募集スケジュール</div>
-                            <div class="text-xl font-bold mb-10">2026年2月13日（金）〜 3月23日（月）</div>
+                            <div class="text-xl font-bold mb-10 text-white">2026年2月13日（金）〜 3月23日（月）</div>
                         </div>
                         <a href="https://docs.google.com/forms/d/e/1FAIpQLSfHe4hB-8_f4qsejryE83LapmjIm4oOclc2wgk0Uumv-zoQpw/viewform?pli=1" target="_blank" class="inline-flex items-center justify-center gap-3 bg-white text-rose-600 px-8 py-4 rounded-full font-black text-xl hover:bg-gray-100 transition-all transform hover:scale-105 shadow-xl relative z-10">
                             <i data-lucide="edit-3" class="w-6 h-6"></i>
@@ -257,7 +267,7 @@
     <section id="about" class="py-32 px-6 relative overflow-hidden border-t border-white/5">
         <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-20 items-center">
             <div class="relative">
-                <div class="absolute -top-10 -left-10 text-[12rem] font-black text-white/[0.02] leading-none select-none font-oswald italic uppercase">ABOUT</div>
+                <div class="absolute -top-10 -left-10 text-[12rem] font-black text-white/[0.02] leading-none select-none font-oswald italic uppercase text-white/5">ABOUT</div>
                 <h2 class="text-5xl font-black mb-8 italic font-oswald uppercase leading-none text-white">
                     WE ARE <span class="text-rose-600 underline decoration-2 underline-offset-8 italic">UNITED.</span>
                 </h2>
@@ -302,7 +312,7 @@
                 <div class="member-card group relative overflow-hidden rounded-3xl aspect-[3/4] bg-[#111] cursor-pointer shadow-2xl">
                     <div class="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent z-10"></div>
                     <div class="absolute inset-0 flex items-center justify-center opacity-10 pointer-events-none group-hover:scale-110 transition-transform duration-700">
-                        <img src="fabicon.png" alt="Dragon Logo Background" class="w-48 h-48 opacity-40">
+                        <div class="w-48 h-48 opacity-40 member-bg-logo"></div>
                     </div>
                     <div class="w-full h-full flex items-center justify-center">
                         <i data-lucide="user" class="w-32 h-32 text-gray-800"></i>
@@ -325,7 +335,7 @@
                 <div class="member-card group relative overflow-hidden rounded-3xl aspect-[3/4] bg-[#111] cursor-pointer shadow-2xl">
                     <div class="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent z-10"></div>
                     <div class="absolute inset-0 flex items-center justify-center opacity-10 pointer-events-none group-hover:scale-110 transition-transform duration-700">
-                        <img src="fabicon.png" alt="Dragon Logo Background" class="w-48 h-48 opacity-40">
+                        <div class="w-48 h-48 opacity-40 member-bg-logo"></div>
                     </div>
                     <div class="w-full h-full flex items-center justify-center">
                         <i data-lucide="user" class="w-32 h-32 text-gray-800"></i>
@@ -348,7 +358,7 @@
                 <div class="member-card group relative overflow-hidden rounded-3xl aspect-[3/4] bg-[#111] cursor-pointer shadow-2xl">
                     <div class="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent z-10"></div>
                     <div class="absolute inset-0 flex items-center justify-center opacity-10 pointer-events-none group-hover:scale-110 transition-transform duration-700">
-                        <img src="fabicon.png" alt="Dragon Logo Background" class="w-48 h-48 opacity-40">
+                        <div class="w-48 h-48 opacity-40 member-bg-logo"></div>
                     </div>
                     <div class="w-full h-full flex items-center justify-center">
                         <i data-lucide="user" class="w-32 h-32 text-gray-800"></i>
@@ -382,18 +392,18 @@
                 <div class="glass-panel p-6 rounded-2xl flex flex-col md:flex-row md:items-center justify-between gap-6 hover:border-rose-600/50 transition border-white/5 group">
                     <div class="flex items-center gap-6">
                         <div class="w-16 h-16 bg-rose-600 rounded-xl flex flex-col items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
-                            <span class="text-[10px] font-bold text-white uppercase tracking-tighter">Mon</span>
+                            <span class="text-[10px] font-bold text-white uppercase tracking-tighter leading-none mb-1">Mon</span>
                             <span class="text-2xl font-black italic font-oswald text-white leading-none">11.25</span>
                         </div>
                         <div>
                             <div class="flex items-center gap-2 mb-1">
-                                <span class="text-xs font-bold text-rose-500 px-2 py-0.5 bg-rose-500/10 rounded uppercase">Minase Nagi</span>
-                                <span class="text-xs text-gray-500 font-medium">21:00 START</span>
+                                <span class="text-xs font-bold text-rose-500 px-2 py-0.5 bg-rose-500/10 rounded uppercase tracking-wider">Minase Nagi</span>
+                                <span class="text-xs text-gray-500 font-medium tracking-tight">21:00 START</span>
                             </div>
                             <h4 class="text-xl font-bold text-white">夜更かしAPEXランク上げ部</h4>
                         </div>
                     </div>
-                    <button onclick="showToast('Reminder Set!')" class="px-8 py-2 border border-rose-600 text-rose-500 rounded-full font-bold hover:bg-rose-600 hover:text-white transition text-sm">WATCH LIVE</button>
+                    <button onclick="showToast('Reminder Set!')" class="px-8 py-2 border border-rose-600 text-rose-500 rounded-full font-bold hover:bg-rose-600 hover:text-white transition text-sm tracking-widest">WATCH LIVE</button>
                 </div>
             </div>
         </div>
@@ -404,8 +414,8 @@
         <div class="max-w-7xl mx-auto grid md:grid-cols-4 gap-12 mb-16 text-center md:text-left">
             <div class="md:col-span-2">
                 <div class="flex items-center justify-center md:justify-start gap-3 mb-6">
-                    <img src="fabicon.png" alt="Footer Logo" class="w-8 h-8 opacity-80">
-                    <div class="text-xl font-black font-oswald uppercase text-white">YUKOKU <span class="text-rose-600">RENGO</span></div>
+                    <img src="https://drive.google.com/uc?id=1E0LQgnDbIlcHdkqocwMeTtESmYudsQ-l" alt="Footer Logo" class="w-8 h-8 opacity-80 object-contain">
+                    <div class="text-xl font-black font-oswald uppercase text-white tracking-tighter">YUKOKU <span class="text-rose-600">RENGO</span></div>
                 </div>
                 <p class="text-gray-500 text-sm max-w-sm mb-6 leading-loose mx-auto md:mx-0 font-medium italic">
                     Neo-Porte所属VTuberユニット「ゆうこく連合」を全力で応援するための非公式ファンサイトです。
