@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YUKOKU RENGO FAN SITE | Neo-Porte Support</title>
-    <!-- ファビコン設定 -->
-    <link rel="icon" href="favicon.png" type="image/png">
+    <!-- Favicon -->
+    <link rel="icon" href="fabicon.png" type="image/png">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
     <style>
@@ -17,7 +17,7 @@
         }
 
         body {
-            font-family: 'Noto+Sans+JP', sans-serif;
+            font-family: 'Noto Sans JP', sans-serif;
             background-color: var(--yukoku-dark);
             color: #ffffff;
             scroll-behavior: smooth;
@@ -29,10 +29,6 @@
             background: rgba(255, 255, 255, 0.03);
             backdrop-filter: blur(12px);
             border: 1px solid rgba(255, 255, 255, 0.1);
-        }
-
-        .member-card:hover img {
-            transform: scale(1.05);
         }
 
         .scanline {
@@ -57,7 +53,7 @@
         }
 
         .logo-glow {
-            filter: drop-shadow(0 0 8px rgba(225, 29, 72, 0.6));
+            filter: drop-shadow(0 0 12px rgba(225, 29, 72, 0.7));
         }
 
         .section-accent {
@@ -76,12 +72,11 @@
 </head>
 <body class="overflow-x-hidden">
 
-    <!-- ナビゲーション -->
+    <!-- Navigation -->
     <nav class="fixed top-0 w-full z-[100] glass-panel border-b border-white/5">
         <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
             <div class="flex items-center gap-3">
-                <!-- ロゴ画像を反映 -->
-                <img src="favicon.png" alt="Logo" class="w-10 h-10 logo-glow">
+                <img src="fabicon.png" alt="Logo" class="w-10 h-10 logo-glow">
                 <div class="text-xl font-black tracking-tighter font-oswald uppercase hidden sm:block">
                     YUKOKU <span class="text-rose-600">RENGO</span>
                 </div>
@@ -100,7 +95,7 @@
         </div>
     </nav>
 
-    <!-- ヒーローセクション -->
+    <!-- Hero Section -->
     <section id="home" class="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
         <div class="absolute inset-0 z-0">
             <div class="absolute inset-0 bg-gradient-to-b from-transparent via-black/40 to-[#0a0a0a] z-10"></div>
@@ -110,7 +105,7 @@
         
         <div class="relative z-20 text-center px-4 max-w-4xl">
             <div class="mb-8 inline-block animate-[float_4s_ease-in-out_infinite]">
-                <img src="favicon.png" alt="Large Logo" class="w-24 h-24 md:w-32 md:h-32 logo-glow mx-auto">
+                <img src="fabicon.png" alt="Large Logo" class="w-24 h-24 md:w-32 md:h-32 logo-glow mx-auto">
             </div>
             
             <div class="mb-4 inline-flex items-center gap-2 px-3 py-1 border border-rose-600/30 rounded-full bg-rose-600/10 text-rose-500 text-[10px] font-bold tracking-[0.2em] uppercase">
@@ -123,7 +118,7 @@
             <h1 class="text-7xl md:text-9xl font-black mb-6 tracking-tighter italic font-oswald leading-none uppercase">
                 ゆうこく<span class="text-rose-600">連合</span>
             </h1>
-            <p class="text-lg md:text-xl text-gray-400 font-light tracking-wide mb-10 leading-relaxed">
+            <p class="text-lg md:text-xl text-gray-400 font-light tracking-wide mb-10 leading-relaxed italic">
                 光のさすほうへ<br>
                 日本独立・日本再興・日本救世
             </p>
@@ -145,7 +140,7 @@
         </div>
     </section>
 
-    <!-- 原口一博政経塾セクション -->
+    <!-- Haraguchi Political & Economic Academy Section -->
     <section id="academy" class="py-32 px-6 relative bg-[#0d0d0d] overflow-hidden">
         <div class="absolute top-0 right-0 p-20 opacity-[0.03] pointer-events-none">
             <i data-lucide="landmark" class="w-96 h-96"></i>
@@ -164,32 +159,32 @@
                 </div>
 
                 <div class="grid md:grid-cols-2 gap-12">
-                    <div class="space-y-6">
+                    <div class="space-y-6 text-gray-400">
                         <h3 class="text-2xl font-bold section-accent pl-6 text-white uppercase tracking-tighter">【ゆうこく連合 強化・発展シナリオ】</h3>
-                        <p class="text-gray-400 leading-relaxed">
+                        <p class="leading-relaxed">
                             現在、日本は独立の危機にあります。この難局を打破し、主権を国民の手に取り戻すためには、中央集権の打破と「地域主権改革」の断行が不可欠です。私たちは、志を同じくする1万人の仲間とともに、この国を再興する大きなうねりを作ります。
                         </p>
                         <p class="text-rose-500 font-bold leading-relaxed">
                             その中核となるのが、今回開講する「原口一博政経塾」です。
                         </p>
-                        <div class="glass-panel p-6 rounded-2xl border-l-4 border-rose-600">
+                        <div class="glass-panel p-6 rounded-2xl border-l-4 border-rose-600 shadow-lg">
                             <h4 class="text-lg font-bold mb-3 text-white">原口一博元総務大臣の志を形に</h4>
-                            <p class="text-sm text-gray-400 leading-loose">
+                            <p class="text-sm leading-loose">
                                 この塾は単なる知識の習得の場ではありません。原口一博元総務大臣がこれまで培ってこられた「 shirasu（知らす）」の精神、認知心理学に基づく人間理解、そして経済・外交の神髄を伝承し、次世代の「日本国の担い手」を輩出する道場です。
                             </p>
                         </div>
                     </div>
 
                     <div class="space-y-4">
-                        <div class="glass-panel p-8 rounded-3xl border border-white/10">
-                            <h3 class="text-xl font-bold mb-6 flex items-center gap-3 text-white">
+                        <div class="glass-panel p-8 rounded-3xl border border-white/10 shadow-xl">
+                            <h3 class="text-xl font-bold mb-6 flex items-center gap-3 text-white font-oswald italic uppercase">
                                 <i data-lucide="info" class="text-rose-600"></i>
-                                開講概要
+                                Academy Overview
                             </h3>
                             <ul class="space-y-4 text-sm">
                                 <li class="flex gap-4 pb-4 border-b border-white/5">
                                     <i data-lucide="target" class="text-rose-500 shrink-0"></i>
-                                    <span class="text-gray-200">地域主権改革担い手つくりプロジェクトとして、日本国を担う人材の育成強化・地域からの発展を目指します。</span>
+                                    <span class="text-gray-200 font-medium">地域主権改革担い手つくりプロジェクトとして、日本国を担う人材の育成強化・地域からの発展を目指します。</span>
                                 </li>
                                 <li class="flex items-center gap-4">
                                     <i data-lucide="calendar" class="text-rose-500 shrink-0"></i>
@@ -224,32 +219,32 @@
                 </div>
 
                 <div class="grid md:grid-cols-2 gap-8 mt-8">
-                    <!-- 募集スケジュール & 申込フォームリンク -->
-                    <div class="bg-rose-600 p-8 rounded-3xl text-white relative overflow-hidden group flex flex-col justify-between">
-                        <i data-lucide="send" class="absolute -right-4 -bottom-4 w-32 h-32 opacity-10 group-hover:rotate-12 transition-transform"></i>
+                    <!-- Recruitment & Form Link -->
+                    <div class="bg-rose-600 p-8 rounded-3xl text-white relative overflow-hidden group flex flex-col justify-between shadow-2xl">
+                        <i data-lucide="send" class="absolute -right-4 -bottom-4 w-40 h-40 opacity-10 group-hover:rotate-12 transition-transform"></i>
                         <div>
-                            <h4 class="text-sm font-bold tracking-[0.2em] mb-2 opacity-80 uppercase">Recruitment Schedule</h4>
-                            <div class="text-3xl font-black mb-4 italic font-oswald">募集スケジュール</div>
-                            <div class="text-lg font-bold mb-6">2026年2月13日（金）〜 3月23日（月）</div>
+                            <h4 class="text-sm font-bold tracking-[0.2em] mb-2 opacity-80 uppercase text-rose-200">Recruitment Schedule</h4>
+                            <div class="text-4xl font-black mb-4 italic font-oswald">募集スケジュール</div>
+                            <div class="text-xl font-bold mb-10">2026年2月13日（金）〜 3月23日（月）</div>
                         </div>
-                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfHe4hB-8_f4qsejryE83LapmjIm4oOclc2wgk0Uumv-zoQpw/viewform?pli=1" target="_blank" class="inline-flex items-center justify-center gap-2 bg-white text-rose-600 px-8 py-4 rounded-full font-black text-lg hover:bg-gray-100 transition-all transform hover:scale-105 shadow-xl relative z-10">
-                            <i data-lucide="edit-3" class="w-5 h-5"></i>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfHe4hB-8_f4qsejryE83LapmjIm4oOclc2wgk0Uumv-zoQpw/viewform?pli=1" target="_blank" class="inline-flex items-center justify-center gap-3 bg-white text-rose-600 px-8 py-4 rounded-full font-black text-xl hover:bg-gray-100 transition-all transform hover:scale-105 shadow-xl relative z-10">
+                            <i data-lucide="edit-3" class="w-6 h-6"></i>
                             申込フォームはこちら
                         </a>
                     </div>
                     
-                    <div class="glass-panel p-8 rounded-3xl flex flex-col justify-center">
+                    <div class="glass-panel p-8 rounded-3xl flex flex-col justify-center border border-white/5">
                         <div class="flex items-center gap-6 mb-4">
-                            <div class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center">
-                                <i data-lucide="award" class="text-rose-500"></i>
+                            <div class="w-14 h-14 bg-white/10 rounded-full flex items-center justify-center text-rose-500 shadow-inner">
+                                <i data-lucide="award" class="w-7 h-7"></i>
                             </div>
                             <div>
-                                <h4 class="font-bold text-white">特典：修了証授与</h4>
-                                <p class="text-xs text-gray-500 mt-1 leading-relaxed">12月に対面での「修了式」を開催し、同志の絆を深めます。</p>
+                                <h4 class="font-bold text-white text-lg">特典：修了証授与</h4>
+                                <p class="text-sm text-gray-500 mt-1 leading-relaxed">12月に対面での「修了式」を開催し、同志の絆を深めます。</p>
                             </div>
                         </div>
-                        <div class="pt-4 border-t border-white/5 flex items-center gap-3">
-                            <span class="text-[10px] font-bold text-rose-500 uppercase tracking-widest">Collaboration</span>
+                        <div class="pt-6 mt-4 border-t border-white/5 flex items-center gap-4">
+                            <span class="text-[10px] font-bold text-rose-500 border border-rose-500/30 px-2 py-0.5 rounded uppercase tracking-widest">Collaboration</span>
                             <span class="text-sm font-bold text-gray-300">ゆうこく連合議員政治協会（大和会）</span>
                         </div>
                     </div>
@@ -258,7 +253,7 @@
         </div>
     </section>
 
-    <!-- アバウトセクション -->
+    <!-- About Section -->
     <section id="about" class="py-32 px-6 relative overflow-hidden border-t border-white/5">
         <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-20 items-center">
             <div class="relative">
@@ -275,12 +270,12 @@
                     </p>
                     <div class="pt-6 grid grid-cols-2 gap-4">
                         <div class="p-4 glass-panel rounded-lg">
-                            <div class="text-rose-500 font-bold text-2xl mb-1 uppercase font-oswald">FPS</div>
-                            <div class="text-xs text-gray-500">頂点を目指す、一切の妥協なきエイム。</div>
+                            <div class="text-rose-500 font-bold text-2xl mb-1 uppercase font-oswald italic">FPS</div>
+                            <div class="text-xs text-gray-500 font-medium">頂点を目指す、一切の妥協なきエイム。</div>
                         </div>
                         <div class="p-4 glass-panel rounded-lg">
-                            <div class="text-rose-500 font-bold text-2xl mb-1 uppercase font-oswald">BOND</div>
-                            <div class="text-xs text-gray-500">時に厳しく、時に温かい無敵の絆。</div>
+                            <div class="text-rose-500 font-bold text-2xl mb-1 uppercase font-oswald italic">BOND</div>
+                            <div class="text-xs text-gray-500 font-medium">時に厳しく、時に温かい無敵の絆。</div>
                         </div>
                     </div>
                 </div>
@@ -294,20 +289,20 @@
         </div>
     </section>
 
-    <!-- メンバーセクション -->
-    <section id="members" class="py-32 px-6 bg-black">
+    <!-- Members Section -->
+    <section id="members" class="py-32 px-6 bg-black relative">
         <div class="max-w-7xl mx-auto">
             <div class="mb-20">
                 <h2 class="text-6xl font-black italic font-oswald uppercase tracking-tighter text-white">THE <span class="text-rose-600">CORE</span> MEMBERS</h2>
-                <p class="text-gray-500 mt-2 tracking-widest uppercase text-sm">RENGO members of Neo-Porte</p>
+                <p class="text-gray-500 mt-2 tracking-widest uppercase text-sm font-bold">RENGO members of Neo-Porte</p>
             </div>
             
             <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
-                <!-- メンバーカードなどは維持 -->
-                <div class="member-card group relative overflow-hidden rounded-3xl aspect-[3/4] bg-[#111] cursor-pointer">
+                <!-- Member Card: Minase Nagi -->
+                <div class="member-card group relative overflow-hidden rounded-3xl aspect-[3/4] bg-[#111] cursor-pointer shadow-2xl">
                     <div class="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent z-10"></div>
                     <div class="absolute inset-0 flex items-center justify-center opacity-10 pointer-events-none group-hover:scale-110 transition-transform duration-700">
-                        <img src="favicon.png" alt="Dragon" class="w-48 h-48 opacity-40">
+                        <img src="fabicon.png" alt="Dragon Logo Background" class="w-48 h-48 opacity-40">
                     </div>
                     <div class="w-full h-full flex items-center justify-center">
                         <i data-lucide="user" class="w-32 h-32 text-gray-800"></i>
@@ -326,10 +321,11 @@
                     </div>
                 </div>
 
-                <div class="member-card group relative overflow-hidden rounded-3xl aspect-[3/4] bg-[#111] cursor-pointer">
+                <!-- Member Card: Tentei Forte -->
+                <div class="member-card group relative overflow-hidden rounded-3xl aspect-[3/4] bg-[#111] cursor-pointer shadow-2xl">
                     <div class="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent z-10"></div>
                     <div class="absolute inset-0 flex items-center justify-center opacity-10 pointer-events-none group-hover:scale-110 transition-transform duration-700">
-                        <img src="favicon.png" alt="Dragon" class="w-48 h-48 opacity-40">
+                        <img src="fabicon.png" alt="Dragon Logo Background" class="w-48 h-48 opacity-40">
                     </div>
                     <div class="w-full h-full flex items-center justify-center">
                         <i data-lucide="user" class="w-32 h-32 text-gray-800"></i>
@@ -340,7 +336,7 @@
                             <span class="text-rose-500 font-bold text-xs tracking-widest uppercase">02 / Emperor</span>
                         </div>
                         <h3 class="text-4xl font-black italic font-oswald mb-2 uppercase text-white">TENTEI <span class="text-rose-600">FORTE</span></h3>
-                        <p class="text-gray-400 text-sm mb-6 line-clamp-2 opacity-0 group-hover:opacity-100 transition-opacity">圧倒的なカリスマ性と、裏表のない情熱で連合を牽引する。</p>
+                        <p class="text-gray-400 text-sm mb-6 line-clamp-2 opacity-0 group-hover:opacity-100 transition-opacity">圧倒的なカリスマ性と、裏表のない情熱で連合を牽引する、無敵のリーダー。</p>
                         <div class="flex gap-4">
                             <div class="p-2 glass-panel rounded-full hover:bg-rose-600 transition text-white"><i data-lucide="youtube" class="w-4 h-4"></i></div>
                             <div class="p-2 glass-panel rounded-full hover:bg-rose-600 transition text-white"><i data-lucide="twitter" class="w-4 h-4"></i></div>
@@ -348,10 +344,11 @@
                     </div>
                 </div>
 
-                <div class="member-card group relative overflow-hidden rounded-3xl aspect-[3/4] bg-[#111] cursor-pointer">
+                <!-- Member Card: Hiiragi Tsurugi -->
+                <div class="member-card group relative overflow-hidden rounded-3xl aspect-[3/4] bg-[#111] cursor-pointer shadow-2xl">
                     <div class="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent z-10"></div>
                     <div class="absolute inset-0 flex items-center justify-center opacity-10 pointer-events-none group-hover:scale-110 transition-transform duration-700">
-                        <img src="favicon.png" alt="Dragon" class="w-48 h-48 opacity-40">
+                        <img src="fabicon.png" alt="Dragon Logo Background" class="w-48 h-48 opacity-40">
                     </div>
                     <div class="w-full h-full flex items-center justify-center">
                         <i data-lucide="user" class="w-32 h-32 text-gray-800"></i>
@@ -373,20 +370,20 @@
         </div>
     </section>
 
-    <!-- スケジュールセクション -->
+    <!-- Schedule Section -->
     <section id="schedule" class="py-32 px-6 relative border-t border-white/5">
         <div class="max-w-4xl mx-auto">
             <div class="text-center mb-16">
                 <h2 class="text-5xl font-black italic font-oswald uppercase mb-4 text-white">Stream <span class="text-rose-600">Schedule</span></h2>
-                <p class="text-gray-500 tracking-widest uppercase text-xs">Mission Briefing</p>
+                <p class="text-gray-500 tracking-widest uppercase text-xs font-bold italic">Mission Briefing</p>
             </div>
             
             <div class="space-y-4">
-                <div class="glass-panel p-6 rounded-2xl flex flex-col md:flex-row md:items-center justify-between gap-6 hover:border-rose-600/50 transition border-white/5">
+                <div class="glass-panel p-6 rounded-2xl flex flex-col md:flex-row md:items-center justify-between gap-6 hover:border-rose-600/50 transition border-white/5 group">
                     <div class="flex items-center gap-6">
-                        <div class="w-16 h-16 bg-rose-600 rounded-xl flex flex-col items-center justify-center shrink-0">
-                            <span class="text-[10px] font-bold text-white">MON</span>
-                            <span class="text-2xl font-black italic font-oswald text-white">11.25</span>
+                        <div class="w-16 h-16 bg-rose-600 rounded-xl flex flex-col items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
+                            <span class="text-[10px] font-bold text-white uppercase tracking-tighter">Mon</span>
+                            <span class="text-2xl font-black italic font-oswald text-white leading-none">11.25</span>
                         </div>
                         <div>
                             <div class="flex items-center gap-2 mb-1">
@@ -396,31 +393,31 @@
                             <h4 class="text-xl font-bold text-white">夜更かしAPEXランク上げ部</h4>
                         </div>
                     </div>
-                    <button onclick="showToast('Reminder Set!')" class="px-6 py-2 border border-rose-600 text-rose-500 rounded-full font-bold hover:bg-rose-600 hover:text-white transition text-sm">WATCH LIVE</button>
+                    <button onclick="showToast('Reminder Set!')" class="px-8 py-2 border border-rose-600 text-rose-500 rounded-full font-bold hover:bg-rose-600 hover:text-white transition text-sm">WATCH LIVE</button>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- フッター -->
+    <!-- Footer -->
     <footer class="py-20 px-6 bg-[#050505] border-t border-white/5">
         <div class="max-w-7xl mx-auto grid md:grid-cols-4 gap-12 mb-16 text-center md:text-left">
             <div class="md:col-span-2">
                 <div class="flex items-center justify-center md:justify-start gap-3 mb-6">
-                    <img src="favicon.png" alt="Footer Logo" class="w-8 h-8 opacity-80">
+                    <img src="fabicon.png" alt="Footer Logo" class="w-8 h-8 opacity-80">
                     <div class="text-xl font-black font-oswald uppercase text-white">YUKOKU <span class="text-rose-600">RENGO</span></div>
                 </div>
-                <p class="text-gray-500 text-sm max-w-sm mb-6 leading-loose mx-auto md:mx-0">
+                <p class="text-gray-500 text-sm max-w-sm mb-6 leading-loose mx-auto md:mx-0 font-medium italic">
                     Neo-Porte所属VTuberユニット「ゆうこく連合」を全力で応援するための非公式ファンサイトです。
                 </p>
                 <div class="flex justify-center md:justify-start gap-4">
-                    <div class="w-10 h-10 glass-panel rounded-full flex items-center justify-center hover:bg-rose-600 transition cursor-pointer text-white"><i data-lucide="twitter" class="w-4 h-4"></i></div>
-                    <div class="w-10 h-10 glass-panel rounded-full flex items-center justify-center hover:bg-rose-600 transition cursor-pointer text-white"><i data-lucide="youtube" class="w-4 h-4"></i></div>
+                    <div class="w-10 h-10 glass-panel rounded-full flex items-center justify-center hover:bg-rose-600 transition cursor-pointer text-white shadow-lg"><i data-lucide="twitter" class="w-4 h-4"></i></div>
+                    <div class="w-10 h-10 glass-panel rounded-full flex items-center justify-center hover:bg-rose-600 transition cursor-pointer text-white shadow-lg"><i data-lucide="youtube" class="w-4 h-4"></i></div>
                 </div>
             </div>
             
             <div>
-                <h5 class="text-white font-bold mb-6 text-sm uppercase tracking-widest font-oswald">Navigation</h5>
+                <h5 class="text-white font-bold mb-6 text-sm uppercase tracking-widest font-oswald italic">Navigation</h5>
                 <ul class="space-y-4 text-sm text-gray-500 font-medium">
                     <li><a href="#home" class="hover:text-rose-500 transition-colors">Home</a></li>
                     <li><a href="#academy" class="hover:text-rose-500 transition-colors">Academy</a></li>
@@ -429,7 +426,7 @@
             </div>
 
             <div>
-                <h5 class="text-white font-bold mb-6 text-sm uppercase tracking-widest font-oswald">Support</h5>
+                <h5 class="text-white font-bold mb-6 text-sm uppercase tracking-widest font-oswald italic">Support</h5>
                 <ul class="space-y-4 text-sm text-gray-500 font-medium">
                     <li><a href="https://yukoku.org/" target="_blank" class="hover:text-rose-500 italic transition-colors">Yukoku Official</a></li>
                     <li><a href="https://neo-porte.jp/" target="_blank" class="hover:text-rose-500 transition-colors">Neo-Porte Site</a></li>
@@ -438,24 +435,26 @@
         </div>
         
         <div class="max-w-7xl mx-auto pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between gap-6 items-center">
-            <p class="text-[10px] text-gray-600 uppercase tracking-widest">
+            <p class="text-[10px] text-gray-600 uppercase tracking-[0.2em] font-bold">
                 &copy; 2024-2026 Yukoku Rengo Fan Project.
             </p>
-            <p class="text-[10px] text-gray-700 max-w-md text-center md:text-right italic leading-relaxed">
+            <p class="text-[10px] text-gray-700 max-w-md text-center md:text-right italic leading-relaxed font-medium">
                 このサイトはファン有志による制作物であり、原口一博氏、Neo-Porte様、および所属タレント様とは一切関係ありません。
             </p>
         </div>
     </footer>
 
-    <!-- 通知トースト -->
+    <!-- Notification Toast -->
     <div id="status-toast" class="fixed bottom-6 right-6 z-[200] px-6 py-3 bg-rose-600 rounded-xl font-bold text-white shadow-2xl translate-y-24 transition-transform duration-500 flex items-center gap-3">
         <i data-lucide="check" class="w-4 h-4"></i>
         <span>ACTION SUCCESS!</span>
     </div>
 
     <script>
+        // Initialize Lucide Icons
         lucide.createIcons();
 
+        // Toast Notification System
         function showToast(msg) {
             const toast = document.getElementById('status-toast');
             toast.querySelector('span').innerText = msg;
@@ -465,6 +464,7 @@
             }, 3000);
         }
 
+        // Parallax Scroll Effect for Hero
         window.addEventListener('scroll', () => {
             const scrolled = window.pageYOffset;
             const heroBg = document.querySelector('#home div.bg-cover');
@@ -473,16 +473,18 @@
             }
         });
 
+        // Interactive Member Cards
         document.querySelectorAll('.member-card').forEach(card => {
             card.addEventListener('click', () => {
                 const name = card.querySelector('h3').innerText;
-                showToast(`SUPPORT FOR ${name}!`);
+                showToast(`SENDING SUPPORT TO ${name}!`);
             });
         });
 
+        // Welcome Message on Load
         window.addEventListener('load', () => {
             setTimeout(() => {
-                showToast("WELCOME TO THE RENGO SITE");
+                showToast("WELCOME TO THE YUKOKU RENGO FAN SITE");
             }, 800);
         });
     </script>
