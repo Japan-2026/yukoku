@@ -8,14 +8,14 @@
     <title>YUKOKU RENGO FAN SITE | ゆうこく連合 応援サイト</title>
     <meta name="description" content="日本独立・日本再興・日本救世。ゆうこく連合（YUKOKU RENGO）の活動を応援する有志のファンサイトです。">
     <meta property="og:title" content="YUKOKU RENGO FAN SITE | ゆうこく連合 応援サイト">
-    <meta property="og:description" content="日本独立・日本再興・日本救世。ゆうこく連合の最新情報や原口一博政経塾の案内を掲載しています。">
-    <meta property="og:image" content="https://drive.google.com/uc?id=1E0LQgnDbIlcHdkqocwMeTtESmYudsQ-l">
+    <meta property="og:description" content="日本独立・日本再興・日本救世。ゆうこく連合の最新情報、党員募集、原口一博政経塾の案内を掲載しています。">
+    <meta property="og:image" content="favicon.png">
     <meta property="og:url" content="https://yukoku.org/">
     <meta property="og:type" content="website">
     <meta name="twitter:card" content="summary_large_image">
 
     <!-- Favicon -->
-    <link rel="icon" href="https://drive.google.com/uc?id=1E0LQgnDbIlcHdkqocwMeTtESmYudsQ-l" type="image/png">
+    <link rel="icon" href="favicon.png" type="image/png">
     
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
@@ -25,7 +25,7 @@
         :root {
             --yukoku-red: #e11d48;
             --yukoku-dark: #0a0a0a;
-            --logo-url: url('https://drive.google.com/uc?id=1E0LQgnDbIlcHdkqocwMeTtESmYudsQ-l');
+            --logo-url: url('favicon.png');
         }
 
         body {
@@ -87,39 +87,44 @@
             background-repeat: no-repeat;
             background-position: center;
         }
+
+        .tier-card:hover {
+            border-color: var(--yukoku-red);
+            background: rgba(225, 29, 72, 0.05);
+        }
     </style>
 </head>
 <body class="overflow-x-hidden">
 
-    <!-- Navigation -->
+    <!-- ナビゲーション -->
     <nav class="fixed top-0 w-full z-[100] glass-panel border-b border-white/5">
         <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
             <div class="flex items-center gap-3">
-                <img src="https://drive.google.com/uc?id=1E0LQgnDbIlcHdkqocwMeTtESmYudsQ-l" alt="Logo" class="w-10 h-10 logo-glow object-contain">
+                <img src="favicon.png" alt="ゆうこく連合ロゴ" class="w-10 h-10 logo-glow object-contain">
                 <div class="text-xl font-black tracking-tighter font-oswald uppercase hidden sm:block">
                     YUKOKU <span class="text-rose-600">RENGO</span>
                 </div>
             </div>
-            <div class="hidden md:flex space-x-6 text-xs font-bold tracking-widest text-gray-300">
+            <div class="hidden lg:flex space-x-6 text-xs font-bold tracking-widest text-gray-300 items-center">
                 <a href="#home" class="hover:text-rose-500 transition">HOME</a>
-                <a href="#about" class="hover:text-rose-500 transition">ABOUT</a>
-                <a href="#academy" class="hover:text-rose-500 transition text-rose-500">ACADEMY</a>
+                <a href="#recruitment" class="hover:text-rose-500 transition text-rose-500 underline decoration-2 underline-offset-4">RECRUIT</a>
+                <a href="#academy" class="hover:text-rose-500 transition">ACADEMY</a>
                 <a href="#members" class="hover:text-rose-500 transition">MEMBERS</a>
-                <a href="https://x.com/TGO_RECLUTE" target="_blank" class="flex items-center gap-1 hover:text-rose-500 transition" title="X Recruitment">
-                    <i data-lucide="twitter" class="w-3 h-3 text-rose-500"></i> RECRUIT
+                <a href="https://x.com/TGO_RECLUTE" target="_blank" class="flex items-center gap-1 hover:text-rose-500 transition" title="募集窓口 X">
+                    <i data-lucide="twitter" class="w-3 h-3 text-rose-500"></i> X
                 </a>
-                <a href="https://www.youtube.com/@tgo-news" target="_blank" class="flex items-center gap-1 hover:text-rose-500 transition" title="YouTube News">
+                <a href="https://www.youtube.com/@tgo-news" target="_blank" class="flex items-center gap-1 hover:text-rose-500 transition" title="TGO NEWS YouTube">
                     <i data-lucide="youtube" class="w-3 h-3 text-rose-500"></i> NEWS
                 </a>
-                <a href="https://yukoku.org/" target="_blank" class="ml-4 px-4 py-2 bg-rose-600 rounded text-white hover:bg-rose-700 transition">OFFICIAL</a>
+                <a href="https://yukoku.org/" target="_blank" class="ml-4 px-4 py-2 bg-rose-600 rounded text-white hover:bg-rose-700 transition font-black">OFFICIAL</a>
             </div>
-            <button class="md:hidden p-2" id="mobile-menu-trigger">
+            <button class="lg:hidden p-2 text-rose-500" id="mobile-menu-trigger">
                 <i data-lucide="menu"></i>
             </button>
         </div>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- ヒーローセクション -->
     <section id="home" class="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
         <div class="absolute inset-0 z-0">
             <div class="absolute inset-0 bg-gradient-to-b from-transparent via-black/40 to-[#0a0a0a] z-10"></div>
@@ -129,7 +134,7 @@
         
         <div class="relative z-20 text-center px-4 max-w-4xl">
             <div class="mb-8 inline-block animate-[float_4s_ease-in-out_infinite]">
-                <img src="https://drive.google.com/uc?id=1E0LQgnDbIlcHdkqocwMeTtESmYudsQ-l" alt="Large Logo" class="w-24 h-24 md:w-32 md:h-32 logo-glow mx-auto object-contain">
+                <img src="favicon.png" alt="ゆうこく連合メインロゴ" class="w-24 h-24 md:w-32 md:h-32 logo-glow mx-auto object-contain">
             </div>
             
             <div class="mb-4 inline-flex items-center gap-2 px-3 py-1 border border-rose-600/30 rounded-full bg-rose-600/10 text-rose-500 text-[10px] font-bold tracking-[0.2em] uppercase">
@@ -143,16 +148,15 @@
                 ゆうこく<span class="text-rose-600">連合</span>
             </h1>
             <p class="text-lg md:text-xl text-gray-400 font-light tracking-wide mb-10 leading-relaxed italic">
-                光のさすほうへ<br>
+                光のさすほうへ、日本を動かそう！<br>
                 日本独立・日本再興・日本救世
             </p>
             <div class="flex flex-wrap justify-center gap-4">
-                <a href="#academy" class="group relative px-8 py-4 overflow-hidden rounded-full font-bold transition-all border border-rose-600/50">
-                    <span class="absolute inset-0 bg-rose-600/10 group-hover:bg-rose-600/20 transition-colors"></span>
-                    <span class="relative flex items-center gap-2 italic text-rose-500 uppercase tracking-wider">政経塾 第1期 募集 <i data-lucide="book-open" class="w-4 h-4"></i></span>
+                <a href="#recruitment" class="group relative px-8 py-4 overflow-hidden rounded-full font-bold transition-all bg-rose-600 hover:bg-rose-700">
+                    <span class="relative flex items-center gap-2 italic text-white uppercase tracking-wider">党員募集ページ <i data-lucide="users" class="w-4 h-4"></i></span>
                 </a>
-                <a href="https://www.youtube.com/@tgo-news" target="_blank" class="group relative px-8 py-4 overflow-hidden rounded-full font-bold transition-all border border-white/20 glass-panel hover:bg-white/5">
-                    <span class="relative flex items-center gap-2 italic text-white uppercase tracking-wider">YouTube News <i data-lucide="play-circle" class="w-4 h-4 text-rose-600"></i></span>
+                <a href="#academy" class="group relative px-8 py-4 overflow-hidden rounded-full font-bold transition-all border border-rose-600/50 glass-panel hover:bg-white/5">
+                    <span class="relative flex items-center gap-2 italic text-rose-500 uppercase tracking-wider">政経塾 第1期 <i data-lucide="book-open" class="w-4 h-4"></i></span>
                 </a>
             </div>
         </div>
@@ -163,19 +167,119 @@
         </div>
     </section>
 
-    <!-- Haraguchi Political & Economic Academy Section -->
-    <section id="academy" class="py-32 px-6 relative bg-[#0d0d0d] overflow-hidden text-gray-400">
+    <!-- 党員募集セクション -->
+    <section id="recruitment" class="py-32 px-6 relative border-t border-white/5 bg-[#080808]">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-20">
+                <h2 class="text-5xl md:text-6xl font-black italic font-oswald uppercase mb-4 text-white">
+                    Party <span class="text-rose-600">Recruitment</span>
+                </h2>
+                <div class="text-2xl font-bold text-gray-300 tracking-widest mb-2 italic">ゆうこく連合 党員募集</div>
+                <p class="text-rose-500 font-bold uppercase tracking-[0.3em] text-xs">光のさすほうへ、日本を動かそう！</p>
+            </div>
+
+            <!-- 3つの理念 -->
+            <div class="grid md:grid-cols-3 gap-8 mb-20">
+                <div class="glass-panel p-8 rounded-3xl border-t-4 border-rose-600">
+                    <div class="text-rose-600 font-oswald text-4xl mb-4 font-black italic">01</div>
+                    <h3 class="text-xl font-black mb-4">日本独立</h3>
+                    <p class="text-gray-400 text-sm leading-loose">独立自尊の日本を創る。国際社会において日本の本当の独立を目指します。</p>
+                </div>
+                <div class="glass-panel p-8 rounded-3xl border-t-4 border-rose-600">
+                    <div class="text-rose-600 font-oswald text-4xl mb-4 font-black italic">02</div>
+                    <h3 class="text-xl font-black mb-4">日本再興</h3>
+                    <p class="text-gray-400 text-sm leading-loose">衰退から成長へ。経済が衰退している日本を成長する日本へ変革します。</p>
+                </div>
+                <div class="glass-panel p-8 rounded-3xl border-t-4 border-rose-600">
+                    <div class="text-rose-600 font-oswald text-4xl mb-4 font-black italic">03</div>
+                    <h3 class="text-xl font-black mb-4">日本救世</h3>
+                    <p class="text-gray-400 text-sm leading-loose">命を守る。真の命を守る政治。国民の命を脅かすものとたたかう。</p>
+                </div>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12 items-start">
+                <!-- 党員種別 -->
+                <div class="space-y-6">
+                    <h3 class="text-2xl font-bold flex items-center gap-3 mb-8">
+                        <i data-lucide="tag" class="text-rose-600"></i>
+                        党員種別
+                    </h3>
+                    <div class="grid grid-cols-1 gap-4">
+                        <div class="tier-card p-6 border border-white/10 rounded-2xl transition-all glass-panel flex justify-between items-center">
+                            <span class="font-bold">特別賛助党員</span>
+                            <span class="text-rose-500 font-black font-oswald text-xl italic">年会費 100,000円</span>
+                        </div>
+                        <div class="tier-card p-6 border border-white/10 rounded-2xl transition-all glass-panel flex justify-between items-center">
+                            <span class="font-bold">党員</span>
+                            <span class="text-rose-500 font-black font-oswald text-xl italic">年会費 6,000円</span>
+                        </div>
+                        <div class="tier-card p-6 border border-white/10 rounded-2xl transition-all glass-panel flex justify-between items-center">
+                            <span class="font-bold">党友</span>
+                            <span class="text-rose-500 font-black font-oswald text-xl italic">年会費 4,000円</span>
+                        </div>
+                        <div class="tier-card p-6 border border-white/10 rounded-2xl transition-all glass-panel flex justify-between items-center">
+                            <span class="font-bold">サポーター</span>
+                            <span class="text-rose-500 font-black font-oswald text-xl italic">年会費 2,000円</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 申込手順 -->
+                <div class="glass-panel p-8 rounded-3xl border border-rose-600/20 shadow-2xl relative overflow-hidden">
+                    <div class="absolute -right-10 -bottom-10 opacity-5 text-rose-600">
+                        <i data-lucide="clipboard-list" class="w-64 h-64"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-8 flex items-center gap-3">
+                        <i data-lucide="send" class="text-rose-600"></i>
+                        党員申込の手順
+                    </h3>
+                    <ol class="space-y-6 relative z-10">
+                        <li class="flex gap-4">
+                            <span class="w-8 h-8 rounded-full bg-rose-600 flex items-center justify-center font-bold text-sm shrink-0">1</span>
+                            <div>
+                                <p class="font-bold mb-2 text-white">オンライン申込</p>
+                                <p class="text-sm text-gray-400">下記の申込ボタンより登録を行ってください。</p>
+                            </div>
+                        </li>
+                        <li class="flex gap-4">
+                            <span class="w-8 h-8 rounded-full bg-rose-600 flex items-center justify-center font-bold text-sm shrink-0">2</span>
+                            <div>
+                                <p class="font-bold mb-2 text-white">振込先のご案内</p>
+                                <p class="text-sm text-gray-400">登録後に、入力されたメールアドレス宛に振込先を案内します。</p>
+                            </div>
+                        </li>
+                        <li class="flex gap-4">
+                            <span class="w-8 h-8 rounded-full bg-rose-600 flex items-center justify-center font-bold text-sm shrink-0">3</span>
+                            <div>
+                                <p class="font-bold mb-2 text-white">納付・完了</p>
+                                <p class="text-sm text-gray-400">指定口座に会費を納付してください。確認後、登録完了となります。</p>
+                            </div>
+                        </li>
+                    </ol>
+                    <div class="mt-12 flex flex-col items-center">
+                         <a href="https://docs.google.com/forms/d/e/1FAIpQLSfHe4hB-8_f4qsejryE83LapmjIm4oOclc2wgk0Uumv-zoQpw/viewform?pli=1" target="_blank" class="w-full inline-flex items-center justify-center gap-3 bg-white text-rose-600 px-8 py-5 rounded-full font-black text-xl hover:bg-gray-100 transition-all transform hover:scale-105 shadow-xl">
+                            入党申込フォームを開く
+                        </a>
+                        <p class="mt-4 text-xs text-gray-500">※日本国籍を有し、18歳以上の成人を対象としています。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 原口一博政経塾セクション -->
+    <section id="academy" class="py-32 px-6 relative bg-[#0d0d0d] overflow-hidden text-gray-400 border-t border-white/5">
         <div class="absolute top-0 right-0 p-20 opacity-[0.03] pointer-events-none">
             <i data-lucide="landmark" class="w-96 h-96"></i>
         </div>
         
         <div class="max-w-6xl mx-auto relative z-10">
             <div class="grid md:grid-cols-1 gap-12 mb-16">
-                <div class="border-b border-rose-600/30 pb-8">
+                <div class="border-b border-rose-600/30 pb-8 text-center md:text-left">
                     <h2 class="text-5xl md:text-6xl font-black italic font-oswald uppercase mb-4 leading-none text-white">
                         原口一博<span class="text-rose-600">政経塾</span>
                     </h2>
-                    <div class="flex items-center gap-4">
+                    <div class="flex items-center justify-center md:justify-start gap-4">
                         <span class="bg-rose-600 text-white px-4 py-1 text-sm font-bold skew-x-[-12deg]">第1期</span>
                         <span class="text-2xl font-bold tracking-widest text-gray-300">2026年4月開講</span>
                     </div>
@@ -184,106 +288,60 @@
                 <div class="grid md:grid-cols-2 gap-12">
                     <div class="space-y-6">
                         <h3 class="text-2xl font-bold section-accent pl-6 text-white uppercase tracking-tighter italic">【ゆうこく連合 強化・発展シナリオ】</h3>
-                        <p class="leading-relaxed">
-                            現在、日本は独立の危機にあります。この難局を打破し、主権を国民の手に取り戻すためには、中央集権の打破と「地域主権改革」の断行が不可欠です。志を同じくする1万人の仲間とともに、再興の大きなうねりを作ります。
-                        </p>
-                        <p class="text-rose-500 font-bold leading-relaxed">
-                            その中核となるのが、今回開講する「原口一博政経塾」です。
-                        </p>
+                        <p class="leading-relaxed">独立の危機にある難局を打破し、主権を国民の手に取り戻す。志を同じくする1万人の仲間とともに、再興の大きなうねりを作ります。その中核が、この「政経塾」です。</p>
                         <div class="glass-panel p-6 rounded-2xl border-l-4 border-rose-600 shadow-lg">
                             <h4 class="text-lg font-bold mb-3 text-white">原口一博元総務大臣の志を形に</h4>
-                            <p class="text-sm leading-loose">
-                                この塾は単なる知識の習得の場ではありません。原口一博元総務大臣がこれまで培ってこられた「 shirasu（知らす）」の精神、認知心理学に基づく人間理解、そして経済・外交の神髄を伝承し、次世代の「日本国の担い手」を輩出する道場です。
-                            </p>
+                            <p class="text-sm leading-loose text-gray-300">「shirasu（知らす）」の精神、認知心理学に基づく人間理解、そして経済・外交の神髄を伝承し、次世代の「日本国の担い手」を輩出する道場です。</p>
                         </div>
                     </div>
 
                     <div class="space-y-4">
-                        <div class="glass-panel p-8 rounded-3xl border border-white/10 shadow-xl">
+                        <div class="glass-panel p-8 rounded-3xl border border-white/10 shadow-xl text-sm">
                             <h3 class="text-xl font-bold mb-6 flex items-center gap-3 text-white font-oswald italic uppercase tracking-wider">
                                 <i data-lucide="info" class="text-rose-600"></i>
                                 Academy Overview
                             </h3>
-                            <ul class="space-y-4 text-sm">
-                                <li class="flex gap-4 pb-4 border-b border-white/5">
-                                    <i data-lucide="target" class="text-rose-500 shrink-0"></i>
-                                    <span class="text-gray-200 font-medium">日本国を担う人材の育成強化・地域からの発展を目指す「地域主権改革担い手つくりプロジェクト」です。</span>
-                                </li>
-                                <li class="flex items-center gap-4">
-                                    <i data-lucide="calendar" class="text-rose-500 shrink-0"></i>
-                                    <span class="text-gray-400">期間：</span>
-                                    <span class="font-bold text-white">2026年4月開講 〜 12月修了式</span>
-                                </li>
-                                <li class="flex items-center gap-4">
-                                    <i data-lucide="clock" class="text-rose-500 shrink-0"></i>
-                                    <span class="text-gray-400">日時：</span>
-                                    <span class="font-bold text-white">毎月2回（第1・第3火曜日） 19:00〜</span>
-                                </li>
-                                <li class="flex items-center gap-4">
-                                    <i data-lucide="video" class="text-rose-500 shrink-0"></i>
-                                    <span class="text-gray-400">形式：</span>
-                                    <span class="font-bold text-white">オンラインセミナー（全国参加可能）</span>
-                                </li>
-                                <li class="flex items-center gap-4">
-                                    <i data-lucide="credit-card" class="text-rose-500 shrink-0"></i>
-                                    <span class="text-gray-400">学費：</span>
-                                    <span class="font-bold text-white">年会費 10万円</span>
-                                </li>
-                                <li class="flex items-start gap-4">
-                                    <i data-lucide="users" class="text-rose-500 shrink-0"></i>
-                                    <div>
-                                        <span class="text-gray-400 block mb-1">応募条件：</span>
-                                        <p class="font-bold text-white leading-relaxed text-xs">日本を救う志があるすべての方に。政党所属不問。※ゆうこく連合メンバーの推薦が必要です。</p>
-                                    </div>
-                                </li>
+                            <ul class="space-y-4">
+                                <li class="flex items-center gap-4"><i data-lucide="calendar" class="text-rose-500 shrink-0"></i> 期間：<span class="font-bold text-white">2026年4月 〜 12月修了式</span></li>
+                                <li class="flex items-center gap-4"><i data-lucide="clock" class="text-rose-500 shrink-0"></i> 日時：<span class="font-bold text-white">毎月2回（第1・第3火曜日） 19:00〜</span></li>
+                                <li class="flex items-center gap-4"><i data-lucide="video" class="text-rose-500 shrink-0"></i> 形式：<span class="font-bold text-white">オンラインセミナー</span></li>
+                                <li class="flex items-center gap-4"><i data-lucide="credit-card" class="text-rose-500 shrink-0"></i> 学費：<span class="font-bold text-white">年会費 10万円</span></li>
+                                <li class="flex items-start gap-4"><i data-lucide="users" class="text-rose-500 shrink-0"></i> <div><span class="text-gray-400 block mb-1">条件：</span><p class="font-bold text-white leading-relaxed text-xs">日本を救う志がある方。※ゆうこく連合メンバーの推薦が必要です。</p></div></li>
                             </ul>
                         </div>
                     </div>
                 </div>
 
                 <div class="grid md:grid-cols-2 gap-8 mt-8">
-                    <!-- Recruitment Area -->
-                    <div class="bg-rose-600 p-8 rounded-3xl text-white relative overflow-hidden group flex flex-col justify-between shadow-2xl">
+                    <!-- 募集窓口：SNSリンクを削除し、フォームのみに -->
+                    <div class="bg-rose-600 p-8 rounded-3xl text-white relative overflow-hidden group flex flex-col justify-between shadow-2xl min-h-[280px]">
                         <i data-lucide="send" class="absolute -right-4 -bottom-4 w-40 h-40 opacity-10 group-hover:rotate-12 transition-transform"></i>
                         <div>
-                            <h4 class="text-sm font-bold tracking-[0.2em] mb-2 opacity-80 uppercase font-oswald text-rose-200">Official Recruitment</h4>
-                            <div class="text-4xl font-black mb-4 italic font-oswald">募集・窓口</div>
+                            <h4 class="text-sm font-bold tracking-[0.2em] mb-2 opacity-80 uppercase font-oswald text-rose-200">Political & Economic Academy</h4>
+                            <div class="text-4xl font-black mb-4 italic font-oswald">政経塾 募集窓口</div>
                             <div class="text-xl font-bold mb-10 text-white italic">2026.02.13 〜 2026.03.23</div>
                         </div>
-                        <div class="flex flex-col gap-3 relative z-10">
-                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfHe4hB-8_f4qsejryE83LapmjIm4oOclc2wgk0Uumv-zoQpw/viewform?pli=1" target="_blank" class="inline-flex items-center justify-center gap-3 bg-white text-rose-600 px-8 py-4 rounded-full font-black text-xl hover:bg-gray-100 transition-all transform hover:scale-105 shadow-xl">
-                                <i data-lucide="edit-3" class="w-6 h-6"></i>
-                                申込フォーム
+                        <div class="relative z-10">
+                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfHe4hB-8_f4qsejryE83LapmjIm4oOclc2wgk0Uumv-zoQpw/viewform?pli=1" target="_blank" class="w-full inline-flex items-center justify-center gap-3 bg-white text-rose-600 px-8 py-5 rounded-full font-black text-xl hover:bg-gray-100 transition-all transform hover:scale-105 shadow-xl">
+                                政経塾 申込フォームを開く
                             </a>
-                            <div class="grid grid-cols-2 gap-2">
-                                <a href="https://x.com/TGO_RECLUTE" target="_blank" class="inline-flex items-center justify-center gap-2 bg-rose-800 text-white py-3 rounded-full font-bold text-sm hover:bg-rose-900 transition-all border border-white/20">
-                                    <i data-lucide="twitter" class="w-4 h-4"></i> 公式X
-                                </a>
-                                <a href="https://www.youtube.com/@tgo-news" target="_blank" class="inline-flex items-center justify-center gap-2 bg-rose-800 text-white py-3 rounded-full font-bold text-sm hover:bg-rose-900 transition-all border border-white/20">
-                                    <i data-lucide="youtube" class="w-4 h-4"></i> 公式YouTube
-                                </a>
-                            </div>
                         </div>
                     </div>
                     
                     <div class="glass-panel p-8 rounded-3xl flex flex-col justify-center border border-white/5">
                         <div class="flex items-center gap-6 mb-4">
-                            <div class="w-14 h-14 bg-white/10 rounded-full flex items-center justify-center text-rose-500 shadow-inner">
+                            <div class="w-14 h-14 bg-white/10 rounded-full flex items-center justify-center text-rose-500 shadow-inner text-rose-500">
                                 <i data-lucide="award" class="w-7 h-7"></i>
                             </div>
                             <div>
-                                <h4 class="font-bold text-white text-lg">特典：修了証授与</h4>
-                                <p class="text-sm text-gray-500 mt-1 leading-relaxed">12月に対面での「修了式」を開催し、同志の絆を深めます。</p>
+                                <h4 class="font-bold text-white text-lg">修了証授与 & 対面修了式</h4>
+                                <p class="text-sm text-gray-500 mt-1 leading-relaxed">規定の講義を修了した方には修了証を授与。12月に同志が集う式典を開催します。</p>
                             </div>
                         </div>
-                        <div class="pt-6 mt-4 border-t border-white/5 flex flex-col gap-2">
+                        <div class="pt-6 mt-4 border-t border-white/5">
                             <div class="flex items-center gap-3 text-gray-400">
                                 <i data-lucide="link" class="w-4 h-4 text-rose-500"></i>
-                                <span class="text-sm font-bold">ゆうこく連合議員政治協会（大和会）</span>
-                            </div>
-                            <div class="flex items-center gap-3 text-gray-400">
-                                <i data-lucide="play-circle" class="w-4 h-4 text-rose-500"></i>
-                                <span class="text-sm font-bold">TGO NEWS（YouTube）</span>
+                                <span class="text-sm font-bold uppercase tracking-tight">ゆうこく連合議員政治協会（大和会）</span>
                             </div>
                         </div>
                     </div>
@@ -297,7 +355,7 @@
         <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-20 items-center">
             <div class="relative">
                 <div class="absolute -top-10 -left-10 text-[12rem] font-black text-white/[0.02] leading-none select-none font-oswald italic uppercase text-white/5">ABOUT</div>
-                <h2 class="text-5xl font-black mb-8 italic font-oswald uppercase leading-none text-white">
+                <h2 class="text-5xl font-black mb-8 italic font-oswald uppercase leading-none text-white text-white">
                     WE ARE <span class="text-rose-600 underline decoration-2 underline-offset-8 italic">UNITED.</span>
                 </h2>
                 <div class="space-y-6 text-gray-400 leading-relaxed text-lg">
@@ -307,16 +365,6 @@
                     <p>
                         配信の枠を超えた友情と、互いを高め合う圧倒的なエネルギー。彼らが集まるとき、そこには予測不能な「熱狂」が生まれます。
                     </p>
-                    <div class="pt-6 grid grid-cols-2 gap-4">
-                        <div class="p-4 glass-panel rounded-lg">
-                            <div class="text-rose-500 font-bold text-2xl mb-1 uppercase font-oswald italic">FPS</div>
-                            <div class="text-xs text-gray-500 font-medium tracking-tighter">頂点を目指す、一切の妥協なきエイム。</div>
-                        </div>
-                        <div class="p-4 glass-panel rounded-lg">
-                            <div class="text-rose-500 font-bold text-2xl mb-1 uppercase font-oswald italic">BOND</div>
-                            <div class="text-xs text-gray-500 font-medium tracking-tighter">時に厳しく、時に温かい無敵の絆。</div>
-                        </div>
-                    </div>
                 </div>
             </div>
             <div class="relative group">
@@ -328,31 +376,30 @@
         </div>
     </section>
 
-    <!-- Members Section -->
-    <section id="members" class="py-32 px-6 bg-black relative">
-        <div class="max-w-7xl mx-auto text-center md:text-left">
-            <div class="mb-20">
+    <!-- メンバーセクション -->
+    <section id="members" class="py-32 px-6 bg-black relative border-t border-white/5">
+        <div class="max-w-7xl mx-auto">
+            <div class="mb-20 text-center md:text-left">
                 <h2 class="text-6xl font-black italic font-oswald uppercase tracking-tighter text-white">THE <span class="text-rose-600">CORE</span> MEMBERS</h2>
                 <p class="text-gray-500 mt-2 tracking-widest uppercase text-sm font-bold">RENGO members of Neo-Porte</p>
             </div>
             
             <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
-                <!-- Member Cards -->
                 <div class="member-card group relative overflow-hidden rounded-3xl aspect-[3/4] bg-[#111] cursor-pointer shadow-2xl">
                     <div class="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent z-10"></div>
                     <div class="absolute inset-0 flex items-center justify-center opacity-10 pointer-events-none group-hover:scale-110 transition-transform duration-700">
                         <div class="w-48 h-48 opacity-40 member-bg-logo"></div>
                     </div>
-                    <div class="w-full h-full flex items-center justify-center">
-                        <i data-lucide="user" class="w-32 h-32 text-gray-800"></i>
+                    <div class="w-full h-full flex items-center justify-center text-gray-800">
+                        <i data-lucide="user" class="w-32 h-32"></i>
                     </div>
                     <div class="absolute bottom-0 left-0 p-8 z-20 w-full transform translate-y-4 group-hover:translate-y-0 transition-transform">
-                        <div class="flex items-center gap-3 mb-2">
+                        <div class="flex items-center gap-3 mb-2 text-rose-500 font-bold text-xs tracking-widest uppercase text-rose-500">
                             <span class="w-10 h-[1px] bg-rose-600"></span>
-                            <span class="text-rose-500 font-bold text-xs tracking-widest uppercase">01 / Attacker</span>
+                            01 / Attacker
                         </div>
-                        <h3 class="text-4xl font-black italic font-oswald mb-2 uppercase text-white">MINASE <span class="text-rose-600">NAGI</span></h3>
-                        <p class="text-gray-400 text-sm mb-6 line-clamp-2 opacity-0 group-hover:opacity-100 transition-opacity">鋭い洞察力と卓越したエイムで戦場を支配する、冷静沈着なエース。</p>
+                        <h3 class="text-4xl font-black italic font-oswald mb-2 uppercase text-white leading-none">MINASE <span class="text-rose-600">NAGI</span></h3>
+                        <p class="text-gray-400 text-sm mb-6 line-clamp-2 opacity-0 group-hover:opacity-100 transition-opacity">鋭い洞察力と卓越したエイムで戦場を支配するエース。</p>
                         <div class="flex gap-4">
                             <div class="p-2 glass-panel rounded-full hover:bg-rose-600 transition text-white"><i data-lucide="youtube" class="w-4 h-4"></i></div>
                             <div class="p-2 glass-panel rounded-full hover:bg-rose-600 transition text-white"><i data-lucide="twitter" class="w-4 h-4"></i></div>
@@ -360,21 +407,21 @@
                     </div>
                 </div>
 
-                <div class="member-card group relative overflow-hidden rounded-3xl aspect-[3/4] bg-[#111] cursor-pointer shadow-2xl">
+                <div class="member-card group relative overflow-hidden rounded-3xl aspect-[3/4] bg-[#111] cursor-pointer shadow-2xl text-white">
                     <div class="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent z-10"></div>
                     <div class="absolute inset-0 flex items-center justify-center opacity-10 pointer-events-none group-hover:scale-110 transition-transform duration-700">
                         <div class="w-48 h-48 opacity-40 member-bg-logo"></div>
                     </div>
-                    <div class="w-full h-full flex items-center justify-center">
-                        <i data-lucide="user" class="w-32 h-32 text-gray-800"></i>
+                    <div class="w-full h-full flex items-center justify-center text-gray-800">
+                        <i data-lucide="user" class="w-32 h-32"></i>
                     </div>
                     <div class="absolute bottom-0 left-0 p-8 z-20 w-full transform translate-y-4 group-hover:translate-y-0 transition-transform">
-                        <div class="flex items-center gap-3 mb-2">
+                        <div class="flex items-center gap-3 mb-2 text-rose-500 font-bold text-xs tracking-widest uppercase">
                             <span class="w-10 h-[1px] bg-rose-600"></span>
-                            <span class="text-rose-500 font-bold text-xs tracking-widest uppercase">02 / Emperor</span>
+                            02 / Emperor
                         </div>
-                        <h3 class="text-4xl font-black italic font-oswald mb-2 uppercase text-white">TENTEI <span class="text-rose-600">FORTE</span></h3>
-                        <p class="text-gray-400 text-sm mb-6 line-clamp-2 opacity-0 group-hover:opacity-100 transition-opacity">圧倒的なカリスマ性と、裏表のない情熱で連合を牽引する、無敵のリーダー。</p>
+                        <h3 class="text-4xl font-black italic font-oswald mb-2 uppercase text-white leading-none">TENTEI <span class="text-rose-600">FORTE</span></h3>
+                        <p class="text-gray-400 text-sm mb-6 line-clamp-2 opacity-0 group-hover:opacity-100 transition-opacity">圧倒的なカリスマ性と、情熱で連合を牽引するリーダー。</p>
                         <div class="flex gap-4">
                             <div class="p-2 glass-panel rounded-full hover:bg-rose-600 transition text-white"><i data-lucide="youtube" class="w-4 h-4"></i></div>
                             <div class="p-2 glass-panel rounded-full hover:bg-rose-600 transition text-white"><i data-lucide="twitter" class="w-4 h-4"></i></div>
@@ -382,21 +429,21 @@
                     </div>
                 </div>
 
-                <div class="member-card group relative overflow-hidden rounded-3xl aspect-[3/4] bg-[#111] cursor-pointer shadow-2xl">
+                <div class="member-card group relative overflow-hidden rounded-3xl aspect-[3/4] bg-[#111] cursor-pointer shadow-2xl text-white">
                     <div class="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent z-10"></div>
                     <div class="absolute inset-0 flex items-center justify-center opacity-10 pointer-events-none group-hover:scale-110 transition-transform duration-700">
                         <div class="w-48 h-48 opacity-40 member-bg-logo"></div>
                     </div>
-                    <div class="w-full h-full flex items-center justify-center">
-                        <i data-lucide="user" class="w-32 h-32 text-gray-800"></i>
+                    <div class="w-full h-full flex items-center justify-center text-gray-800">
+                        <i data-lucide="user" class="w-32 h-32"></i>
                     </div>
                     <div class="absolute bottom-0 left-0 p-8 z-20 w-full transform translate-y-4 group-hover:translate-y-0 transition-transform">
-                        <div class="flex items-center gap-3 mb-2">
+                        <div class="flex items-center gap-3 mb-2 text-rose-500 font-bold text-xs tracking-widest uppercase">
                             <span class="w-10 h-[1px] bg-rose-600"></span>
-                            <span class="text-rose-500 font-bold text-xs tracking-widest uppercase">03 / Blade</span>
+                            03 / Blade
                         </div>
-                        <h3 class="text-4xl font-black italic font-oswald mb-2 uppercase text-white">HIIRAGI <span class="text-rose-600">TSURUGI</span></h3>
-                        <p class="text-gray-400 text-sm mb-6 line-clamp-2 opacity-0 group-hover:opacity-100 transition-opacity">変幻自在の立ち回りと、場を盛り上げるムードメーカー。連合の鋭い「刃」。</p>
+                        <h3 class="text-4xl font-black italic font-oswald mb-2 uppercase text-white leading-none">HIIRAGI <span class="text-rose-600">TSURUGI</span></h3>
+                        <p class="text-gray-400 text-sm mb-6 line-clamp-2 opacity-0 group-hover:opacity-100 transition-opacity">変幻自在の立ち回りと場を盛り上げるムードメーカー。連合の「刃」。</p>
                         <div class="flex gap-4">
                             <div class="p-2 glass-panel rounded-full hover:bg-rose-600 transition text-white"><i data-lucide="youtube" class="w-4 h-4"></i></div>
                             <div class="p-2 glass-panel rounded-full hover:bg-rose-600 transition text-white"><i data-lucide="twitter" class="w-4 h-4"></i></div>
@@ -407,52 +454,58 @@
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- フッター -->
     <footer class="py-20 px-6 bg-[#050505] border-t border-white/5">
         <div class="max-w-7xl mx-auto grid md:grid-cols-4 gap-12 mb-16 text-center md:text-left">
             <div class="md:col-span-2">
                 <div class="flex items-center justify-center md:justify-start gap-3 mb-6">
-                    <img src="https://drive.google.com/uc?id=1E0LQgnDbIlcHdkqocwMeTtESmYudsQ-l" alt="Footer Logo" class="w-8 h-8 opacity-80 object-contain">
+                    <img src="favicon.png" alt="フッターロゴ" class="w-8 h-8 opacity-80 object-contain">
                     <div class="text-xl font-black font-oswald uppercase text-white tracking-tighter leading-none">YUKOKU <span class="text-rose-600">RENGO</span></div>
                 </div>
-                <p class="text-gray-500 text-sm max-w-sm mb-6 leading-loose mx-auto md:mx-0 font-medium italic">
-                    Neo-Porte所属VTuberユニット「ゆうこく連合」を全力で応援するための非公式ファンサイトです。
-                </p>
+                <div class="mb-6 space-y-2">
+                    <p class="text-gray-500 text-sm font-medium italic">ゆうこく連合（ゆうこく連合政治協会）</p>
+                    <div class="flex items-center justify-center md:justify-start gap-3 text-xs text-gray-600">
+                        <i data-lucide="mail" class="w-3 h-3 text-rose-500"></i> infosaga@haraguti.com
+                    </div>
+                    <div class="flex items-center justify-center md:justify-start gap-3 text-xs text-gray-600">
+                        <i data-lucide="phone" class="w-3 h-3 text-rose-500"></i> 0952-32-2321
+                    </div>
+                </div>
                 <div class="flex justify-center md:justify-start gap-4">
-                    <a href="https://x.com/TGO_RECLUTE" target="_blank" class="w-10 h-10 glass-panel rounded-full flex items-center justify-center hover:bg-rose-600 transition cursor-pointer text-white shadow-lg border border-rose-600/50" title="Recruitment Account (X)"><i data-lucide="twitter" class="w-4 h-4"></i></a>
-                    <a href="https://www.youtube.com/@tgo-news" target="_blank" class="w-10 h-10 glass-panel rounded-full flex items-center justify-center hover:bg-rose-600 transition cursor-pointer text-white shadow-lg border border-rose-600/50" title="News Channel (YouTube)"><i data-lucide="youtube" class="w-4 h-4"></i></a>
+                    <a href="https://x.com/TGO_RECLUTE" target="_blank" class="w-10 h-10 glass-panel rounded-full flex items-center justify-center hover:bg-rose-600 transition cursor-pointer text-white shadow-lg border border-rose-600/50" title="公式募集 X (Twitter)"><i data-lucide="twitter" class="w-4 h-4"></i></a>
+                    <a href="https://www.youtube.com/@tgo-news" target="_blank" class="w-10 h-10 glass-panel rounded-full flex items-center justify-center hover:bg-rose-600 transition cursor-pointer text-white shadow-lg border border-rose-600/50" title="TGO NEWS YouTube チャンネル"><i data-lucide="youtube" class="w-4 h-4"></i></a>
                 </div>
             </div>
             
             <div>
-                <h5 class="text-white font-bold mb-6 text-sm uppercase tracking-widest font-oswald italic">Navigation</h5>
+                <h5 class="text-white font-bold mb-6 text-sm uppercase tracking-widest font-oswald italic text-white">Information</h5>
                 <ul class="space-y-4 text-sm text-gray-500 font-medium">
                     <li><a href="#home" class="hover:text-rose-500 transition-colors">Home</a></li>
-                    <li><a href="#academy" class="hover:text-rose-500 transition-colors">Academy</a></li>
-                    <li><a href="https://x.com/TGO_RECLUTE" target="_blank" class="hover:text-rose-500 transition-colors italic">Recruit (X)</a></li>
+                    <li><a href="#recruitment" class="hover:text-rose-500 transition-colors font-bold">党員募集 (Recruit)</a></li>
+                    <li><a href="#academy" class="hover:text-rose-500 transition-colors">政経塾 (Academy)</a></li>
                 </ul>
             </div>
 
             <div>
-                <h5 class="text-white font-bold mb-6 text-sm uppercase tracking-widest font-oswald italic">Support</h5>
+                <h5 class="text-white font-bold mb-6 text-sm uppercase tracking-widest font-oswald italic text-white">Contact</h5>
                 <ul class="space-y-4 text-sm text-gray-500 font-medium">
-                    <li><a href="https://yukoku.org/" target="_blank" class="hover:text-rose-500 italic transition-colors">Yukoku Official</a></li>
-                    <li><a href="https://neo-porte.jp/" target="_blank" class="hover:text-rose-500 transition-colors">Neo-Porte Site</a></li>
+                    <li><a href="https://yukoku.org/" target="_blank" class="hover:text-rose-500 italic transition-colors">ゆうこく連合 公式サイト</a></li>
+                    <li><a href="https://neo-porte.jp/" target="_blank" class="hover:text-rose-500 transition-colors">Neo-Porte 公式サイト</a></li>
                 </ul>
             </div>
         </div>
         
-        <div class="max-w-7xl mx-auto pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between gap-6 items-center">
-            <p class="text-[10px] text-gray-600 uppercase tracking-[0.2em] font-bold">
+        <div class="max-w-7xl mx-auto pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between gap-6 items-center text-[10px]">
+            <p class="text-gray-600 uppercase tracking-[0.2em] font-bold text-gray-600">
                 &copy; 2024-2026 Yukoku Rengo Fan Project.
             </p>
-            <p class="text-[10px] text-gray-700 max-w-md text-center md:text-right italic leading-relaxed font-medium">
+            <p class="text-gray-700 max-w-md text-center md:text-right italic leading-relaxed font-medium">
                 このサイトはファン有志による制作物であり、原口一博氏、Neo-Porte様、および所属タレント様とは一切関係ありません。
             </p>
         </div>
     </footer>
 
-    <!-- Notification Toast -->
+    <!-- 通知トースト -->
     <div id="status-toast" class="fixed bottom-6 right-6 z-[200] px-6 py-3 bg-rose-600 rounded-xl font-bold text-white shadow-2xl translate-y-24 transition-transform duration-500 flex items-center gap-3">
         <i data-lucide="check" class="w-4 h-4"></i>
         <span>ACTION SUCCESS!</span>
