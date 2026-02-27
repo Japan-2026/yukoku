@@ -3,9 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YUKOKU RENGO FAN SITE | Neo-Porte Support</title>
+    
+    <!-- プレビュータグ (Open Graph / Meta Tags) -->
+    <title>YUKOKU RENGO FAN SITE | ゆうこく連合 応援サイト</title>
+    <meta name="description" content="日本独立・日本再興・日本救世。ゆうこく連合（YUKOKU RENGO）の活動を応援する有志のファンサイトです。">
+    <meta property="og:title" content="YUKOKU RENGO FAN SITE | ゆうこく連合 応援サイト">
+    <meta property="og:description" content="日本独立・日本再興・日本救世。ゆうこく連合の最新情報や原口一博政経塾の案内を掲載しています。">
+    <meta property="og:image" content="https://drive.google.com/uc?id=1E0LQgnDbIlcHdkqocwMeTtESmYudsQ-l">
+    <meta property="og:url" content="https://yukoku.org/">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+
     <!-- Favicon -->
     <link rel="icon" href="https://drive.google.com/uc?id=1E0LQgnDbIlcHdkqocwMeTtESmYudsQ-l" type="image/png">
+    
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
     <style>
@@ -14,7 +25,6 @@
         :root {
             --yukoku-red: #e11d48;
             --yukoku-dark: #0a0a0a;
-            /* ロゴURLの共通変数 */
             --logo-url: url('https://drive.google.com/uc?id=1E0LQgnDbIlcHdkqocwMeTtESmYudsQ-l');
         }
 
@@ -71,7 +81,6 @@
             background: var(--yukoku-red);
         }
 
-        /* メンバーカードの背景用 */
         .member-bg-logo {
             background-image: var(--logo-url);
             background-size: contain;
@@ -91,13 +100,18 @@
                     YUKOKU <span class="text-rose-600">RENGO</span>
                 </div>
             </div>
-            <div class="hidden md:flex space-x-8 text-xs font-bold tracking-widest text-gray-300">
+            <div class="hidden md:flex space-x-6 text-xs font-bold tracking-widest text-gray-300">
                 <a href="#home" class="hover:text-rose-500 transition">HOME</a>
                 <a href="#about" class="hover:text-rose-500 transition">ABOUT</a>
                 <a href="#academy" class="hover:text-rose-500 transition text-rose-500">ACADEMY</a>
                 <a href="#members" class="hover:text-rose-500 transition">MEMBERS</a>
-                <a href="#schedule" class="hover:text-rose-500 transition">SCHEDULE</a>
-                <a href="https://yukoku.org/" target="_blank" class="px-4 py-2 bg-rose-600 rounded text-white hover:bg-rose-700 transition">OFFICIAL</a>
+                <a href="https://x.com/TGO_RECLUTE" target="_blank" class="flex items-center gap-1 hover:text-rose-500 transition" title="X Recruitment">
+                    <i data-lucide="twitter" class="w-3 h-3 text-rose-500"></i> RECRUIT
+                </a>
+                <a href="https://www.youtube.com/@tgo-news" target="_blank" class="flex items-center gap-1 hover:text-rose-500 transition" title="YouTube News">
+                    <i data-lucide="youtube" class="w-3 h-3 text-rose-500"></i> NEWS
+                </a>
+                <a href="https://yukoku.org/" target="_blank" class="ml-4 px-4 py-2 bg-rose-600 rounded text-white hover:bg-rose-700 transition">OFFICIAL</a>
             </div>
             <button class="md:hidden p-2" id="mobile-menu-trigger">
                 <i data-lucide="menu"></i>
@@ -132,26 +146,25 @@
                 光のさすほうへ<br>
                 日本独立・日本再興・日本救世
             </p>
-            <div class="flex flex-wrap justify-center gap-6">
-                <a href="#academy" class="group relative px-10 py-4 overflow-hidden rounded-full font-bold transition-all border border-rose-600/50">
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="#academy" class="group relative px-8 py-4 overflow-hidden rounded-full font-bold transition-all border border-rose-600/50">
                     <span class="absolute inset-0 bg-rose-600/10 group-hover:bg-rose-600/20 transition-colors"></span>
-                    <span class="relative flex items-center gap-2 italic text-rose-500 uppercase tracking-wider">政経塾 第1期 募集要項 <i data-lucide="book-open" class="w-4 h-4"></i></span>
+                    <span class="relative flex items-center gap-2 italic text-rose-500 uppercase tracking-wider">政経塾 第1期 募集 <i data-lucide="book-open" class="w-4 h-4"></i></span>
                 </a>
-                <a href="#members" class="group relative px-10 py-4 overflow-hidden rounded-full font-bold transition-all">
-                    <span class="absolute inset-0 bg-rose-600 group-hover:bg-rose-700 transition-colors"></span>
-                    <span class="relative flex items-center gap-2 italic text-white uppercase tracking-wider">Join the RENGO <i data-lucide="arrow-right" class="w-4 h-4"></i></span>
+                <a href="https://www.youtube.com/@tgo-news" target="_blank" class="group relative px-8 py-4 overflow-hidden rounded-full font-bold transition-all border border-white/20 glass-panel hover:bg-white/5">
+                    <span class="relative flex items-center gap-2 italic text-white uppercase tracking-wider">YouTube News <i data-lucide="play-circle" class="w-4 h-4 text-rose-600"></i></span>
                 </a>
             </div>
         </div>
 
         <div class="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-30">
-            <span class="text-[10px] tracking-[0.3em] font-bold uppercase text-white">Scroll</span>
+            <span class="text-[10px] tracking-[0.3em] font-bold uppercase text-white leading-none">Scroll</span>
             <div class="w-[1px] h-12 bg-gradient-to-b from-rose-600 to-transparent"></div>
         </div>
     </section>
 
     <!-- Haraguchi Political & Economic Academy Section -->
-    <section id="academy" class="py-32 px-6 relative bg-[#0d0d0d] overflow-hidden">
+    <section id="academy" class="py-32 px-6 relative bg-[#0d0d0d] overflow-hidden text-gray-400">
         <div class="absolute top-0 right-0 p-20 opacity-[0.03] pointer-events-none">
             <i data-lucide="landmark" class="w-96 h-96"></i>
         </div>
@@ -169,10 +182,10 @@
                 </div>
 
                 <div class="grid md:grid-cols-2 gap-12">
-                    <div class="space-y-6 text-gray-400">
-                        <h3 class="text-2xl font-bold section-accent pl-6 text-white uppercase tracking-tighter">【ゆうこく連合 強化・発展シナリオ】</h3>
+                    <div class="space-y-6">
+                        <h3 class="text-2xl font-bold section-accent pl-6 text-white uppercase tracking-tighter italic">【ゆうこく連合 強化・発展シナリオ】</h3>
                         <p class="leading-relaxed">
-                            現在、日本は独立の危機にあります。この難局を打破し、主権を国民の手に取り戻すためには、中央集権の打破と「地域主権改革」の断行が不可欠です。私たちは、志を同じくする1万人の仲間とともに、この国を再興する大きなうねりを作ります。
+                            現在、日本は独立の危機にあります。この難局を打破し、主権を国民の手に取り戻すためには、中央集権の打破と「地域主権改革」の断行が不可欠です。志を同じくする1万人の仲間とともに、再興の大きなうねりを作ります。
                         </p>
                         <p class="text-rose-500 font-bold leading-relaxed">
                             その中核となるのが、今回開講する「原口一博政経塾」です。
@@ -187,14 +200,14 @@
 
                     <div class="space-y-4">
                         <div class="glass-panel p-8 rounded-3xl border border-white/10 shadow-xl">
-                            <h3 class="text-xl font-bold mb-6 flex items-center gap-3 text-white font-oswald italic uppercase">
+                            <h3 class="text-xl font-bold mb-6 flex items-center gap-3 text-white font-oswald italic uppercase tracking-wider">
                                 <i data-lucide="info" class="text-rose-600"></i>
                                 Academy Overview
                             </h3>
                             <ul class="space-y-4 text-sm">
                                 <li class="flex gap-4 pb-4 border-b border-white/5">
                                     <i data-lucide="target" class="text-rose-500 shrink-0"></i>
-                                    <span class="text-gray-200 font-medium">地域主権改革担い手つくりプロジェクトとして、日本国を担う人材の育成強化・地域からの発展を目指します。</span>
+                                    <span class="text-gray-200 font-medium">日本国を担う人材の育成強化・地域からの発展を目指す「地域主権改革担い手つくりプロジェクト」です。</span>
                                 </li>
                                 <li class="flex items-center gap-4">
                                     <i data-lucide="calendar" class="text-rose-500 shrink-0"></i>
@@ -220,7 +233,7 @@
                                     <i data-lucide="users" class="text-rose-500 shrink-0"></i>
                                     <div>
                                         <span class="text-gray-400 block mb-1">応募条件：</span>
-                                        <p class="font-bold text-white leading-relaxed">政党所属不問。日本を救う志があるすべての方に。※ゆうこく連合メンバーの推薦が必要です。</p>
+                                        <p class="font-bold text-white leading-relaxed text-xs">日本を救う志があるすべての方に。政党所属不問。※ゆうこく連合メンバーの推薦が必要です。</p>
                                     </div>
                                 </li>
                             </ul>
@@ -229,18 +242,28 @@
                 </div>
 
                 <div class="grid md:grid-cols-2 gap-8 mt-8">
-                    <!-- Recruitment & Form Link -->
+                    <!-- Recruitment Area -->
                     <div class="bg-rose-600 p-8 rounded-3xl text-white relative overflow-hidden group flex flex-col justify-between shadow-2xl">
                         <i data-lucide="send" class="absolute -right-4 -bottom-4 w-40 h-40 opacity-10 group-hover:rotate-12 transition-transform"></i>
                         <div>
-                            <h4 class="text-sm font-bold tracking-[0.2em] mb-2 opacity-80 uppercase text-rose-200">Recruitment Schedule</h4>
-                            <div class="text-4xl font-black mb-4 italic font-oswald">募集スケジュール</div>
-                            <div class="text-xl font-bold mb-10 text-white">2026年2月13日（金）〜 3月23日（月）</div>
+                            <h4 class="text-sm font-bold tracking-[0.2em] mb-2 opacity-80 uppercase font-oswald text-rose-200">Official Recruitment</h4>
+                            <div class="text-4xl font-black mb-4 italic font-oswald">募集・窓口</div>
+                            <div class="text-xl font-bold mb-10 text-white italic">2026.02.13 〜 2026.03.23</div>
                         </div>
-                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfHe4hB-8_f4qsejryE83LapmjIm4oOclc2wgk0Uumv-zoQpw/viewform?pli=1" target="_blank" class="inline-flex items-center justify-center gap-3 bg-white text-rose-600 px-8 py-4 rounded-full font-black text-xl hover:bg-gray-100 transition-all transform hover:scale-105 shadow-xl relative z-10">
-                            <i data-lucide="edit-3" class="w-6 h-6"></i>
-                            申込フォームはこちら
-                        </a>
+                        <div class="flex flex-col gap-3 relative z-10">
+                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfHe4hB-8_f4qsejryE83LapmjIm4oOclc2wgk0Uumv-zoQpw/viewform?pli=1" target="_blank" class="inline-flex items-center justify-center gap-3 bg-white text-rose-600 px-8 py-4 rounded-full font-black text-xl hover:bg-gray-100 transition-all transform hover:scale-105 shadow-xl">
+                                <i data-lucide="edit-3" class="w-6 h-6"></i>
+                                申込フォーム
+                            </a>
+                            <div class="grid grid-cols-2 gap-2">
+                                <a href="https://x.com/TGO_RECLUTE" target="_blank" class="inline-flex items-center justify-center gap-2 bg-rose-800 text-white py-3 rounded-full font-bold text-sm hover:bg-rose-900 transition-all border border-white/20">
+                                    <i data-lucide="twitter" class="w-4 h-4"></i> 公式X
+                                </a>
+                                <a href="https://www.youtube.com/@tgo-news" target="_blank" class="inline-flex items-center justify-center gap-2 bg-rose-800 text-white py-3 rounded-full font-bold text-sm hover:bg-rose-900 transition-all border border-white/20">
+                                    <i data-lucide="youtube" class="w-4 h-4"></i> 公式YouTube
+                                </a>
+                            </div>
+                        </div>
                     </div>
                     
                     <div class="glass-panel p-8 rounded-3xl flex flex-col justify-center border border-white/5">
@@ -253,9 +276,15 @@
                                 <p class="text-sm text-gray-500 mt-1 leading-relaxed">12月に対面での「修了式」を開催し、同志の絆を深めます。</p>
                             </div>
                         </div>
-                        <div class="pt-6 mt-4 border-t border-white/5 flex items-center gap-4">
-                            <span class="text-[10px] font-bold text-rose-500 border border-rose-500/30 px-2 py-0.5 rounded uppercase tracking-widest">Collaboration</span>
-                            <span class="text-sm font-bold text-gray-300">ゆうこく連合議員政治協会（大和会）</span>
+                        <div class="pt-6 mt-4 border-t border-white/5 flex flex-col gap-2">
+                            <div class="flex items-center gap-3 text-gray-400">
+                                <i data-lucide="link" class="w-4 h-4 text-rose-500"></i>
+                                <span class="text-sm font-bold">ゆうこく連合議員政治協会（大和会）</span>
+                            </div>
+                            <div class="flex items-center gap-3 text-gray-400">
+                                <i data-lucide="play-circle" class="w-4 h-4 text-rose-500"></i>
+                                <span class="text-sm font-bold">TGO NEWS（YouTube）</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -281,11 +310,11 @@
                     <div class="pt-6 grid grid-cols-2 gap-4">
                         <div class="p-4 glass-panel rounded-lg">
                             <div class="text-rose-500 font-bold text-2xl mb-1 uppercase font-oswald italic">FPS</div>
-                            <div class="text-xs text-gray-500 font-medium">頂点を目指す、一切の妥協なきエイム。</div>
+                            <div class="text-xs text-gray-500 font-medium tracking-tighter">頂点を目指す、一切の妥協なきエイム。</div>
                         </div>
                         <div class="p-4 glass-panel rounded-lg">
                             <div class="text-rose-500 font-bold text-2xl mb-1 uppercase font-oswald italic">BOND</div>
-                            <div class="text-xs text-gray-500 font-medium">時に厳しく、時に温かい無敵の絆。</div>
+                            <div class="text-xs text-gray-500 font-medium tracking-tighter">時に厳しく、時に温かい無敵の絆。</div>
                         </div>
                     </div>
                 </div>
@@ -301,14 +330,14 @@
 
     <!-- Members Section -->
     <section id="members" class="py-32 px-6 bg-black relative">
-        <div class="max-w-7xl mx-auto">
+        <div class="max-w-7xl mx-auto text-center md:text-left">
             <div class="mb-20">
                 <h2 class="text-6xl font-black italic font-oswald uppercase tracking-tighter text-white">THE <span class="text-rose-600">CORE</span> MEMBERS</h2>
                 <p class="text-gray-500 mt-2 tracking-widest uppercase text-sm font-bold">RENGO members of Neo-Porte</p>
             </div>
             
             <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
-                <!-- Member Card: Minase Nagi -->
+                <!-- Member Cards -->
                 <div class="member-card group relative overflow-hidden rounded-3xl aspect-[3/4] bg-[#111] cursor-pointer shadow-2xl">
                     <div class="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent z-10"></div>
                     <div class="absolute inset-0 flex items-center justify-center opacity-10 pointer-events-none group-hover:scale-110 transition-transform duration-700">
@@ -331,7 +360,6 @@
                     </div>
                 </div>
 
-                <!-- Member Card: Tentei Forte -->
                 <div class="member-card group relative overflow-hidden rounded-3xl aspect-[3/4] bg-[#111] cursor-pointer shadow-2xl">
                     <div class="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent z-10"></div>
                     <div class="absolute inset-0 flex items-center justify-center opacity-10 pointer-events-none group-hover:scale-110 transition-transform duration-700">
@@ -354,7 +382,6 @@
                     </div>
                 </div>
 
-                <!-- Member Card: Hiiragi Tsurugi -->
                 <div class="member-card group relative overflow-hidden rounded-3xl aspect-[3/4] bg-[#111] cursor-pointer shadow-2xl">
                     <div class="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent z-10"></div>
                     <div class="absolute inset-0 flex items-center justify-center opacity-10 pointer-events-none group-hover:scale-110 transition-transform duration-700">
@@ -380,49 +407,20 @@
         </div>
     </section>
 
-    <!-- Schedule Section -->
-    <section id="schedule" class="py-32 px-6 relative border-t border-white/5">
-        <div class="max-w-4xl mx-auto">
-            <div class="text-center mb-16">
-                <h2 class="text-5xl font-black italic font-oswald uppercase mb-4 text-white">Stream <span class="text-rose-600">Schedule</span></h2>
-                <p class="text-gray-500 tracking-widest uppercase text-xs font-bold italic">Mission Briefing</p>
-            </div>
-            
-            <div class="space-y-4">
-                <div class="glass-panel p-6 rounded-2xl flex flex-col md:flex-row md:items-center justify-between gap-6 hover:border-rose-600/50 transition border-white/5 group">
-                    <div class="flex items-center gap-6">
-                        <div class="w-16 h-16 bg-rose-600 rounded-xl flex flex-col items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
-                            <span class="text-[10px] font-bold text-white uppercase tracking-tighter leading-none mb-1">Mon</span>
-                            <span class="text-2xl font-black italic font-oswald text-white leading-none">11.25</span>
-                        </div>
-                        <div>
-                            <div class="flex items-center gap-2 mb-1">
-                                <span class="text-xs font-bold text-rose-500 px-2 py-0.5 bg-rose-500/10 rounded uppercase tracking-wider">Minase Nagi</span>
-                                <span class="text-xs text-gray-500 font-medium tracking-tight">21:00 START</span>
-                            </div>
-                            <h4 class="text-xl font-bold text-white">夜更かしAPEXランク上げ部</h4>
-                        </div>
-                    </div>
-                    <button onclick="showToast('Reminder Set!')" class="px-8 py-2 border border-rose-600 text-rose-500 rounded-full font-bold hover:bg-rose-600 hover:text-white transition text-sm tracking-widest">WATCH LIVE</button>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Footer -->
     <footer class="py-20 px-6 bg-[#050505] border-t border-white/5">
         <div class="max-w-7xl mx-auto grid md:grid-cols-4 gap-12 mb-16 text-center md:text-left">
             <div class="md:col-span-2">
                 <div class="flex items-center justify-center md:justify-start gap-3 mb-6">
                     <img src="https://drive.google.com/uc?id=1E0LQgnDbIlcHdkqocwMeTtESmYudsQ-l" alt="Footer Logo" class="w-8 h-8 opacity-80 object-contain">
-                    <div class="text-xl font-black font-oswald uppercase text-white tracking-tighter">YUKOKU <span class="text-rose-600">RENGO</span></div>
+                    <div class="text-xl font-black font-oswald uppercase text-white tracking-tighter leading-none">YUKOKU <span class="text-rose-600">RENGO</span></div>
                 </div>
                 <p class="text-gray-500 text-sm max-w-sm mb-6 leading-loose mx-auto md:mx-0 font-medium italic">
                     Neo-Porte所属VTuberユニット「ゆうこく連合」を全力で応援するための非公式ファンサイトです。
                 </p>
                 <div class="flex justify-center md:justify-start gap-4">
-                    <div class="w-10 h-10 glass-panel rounded-full flex items-center justify-center hover:bg-rose-600 transition cursor-pointer text-white shadow-lg"><i data-lucide="twitter" class="w-4 h-4"></i></div>
-                    <div class="w-10 h-10 glass-panel rounded-full flex items-center justify-center hover:bg-rose-600 transition cursor-pointer text-white shadow-lg"><i data-lucide="youtube" class="w-4 h-4"></i></div>
+                    <a href="https://x.com/TGO_RECLUTE" target="_blank" class="w-10 h-10 glass-panel rounded-full flex items-center justify-center hover:bg-rose-600 transition cursor-pointer text-white shadow-lg border border-rose-600/50" title="Recruitment Account (X)"><i data-lucide="twitter" class="w-4 h-4"></i></a>
+                    <a href="https://www.youtube.com/@tgo-news" target="_blank" class="w-10 h-10 glass-panel rounded-full flex items-center justify-center hover:bg-rose-600 transition cursor-pointer text-white shadow-lg border border-rose-600/50" title="News Channel (YouTube)"><i data-lucide="youtube" class="w-4 h-4"></i></a>
                 </div>
             </div>
             
@@ -431,7 +429,7 @@
                 <ul class="space-y-4 text-sm text-gray-500 font-medium">
                     <li><a href="#home" class="hover:text-rose-500 transition-colors">Home</a></li>
                     <li><a href="#academy" class="hover:text-rose-500 transition-colors">Academy</a></li>
-                    <li><a href="#members" class="hover:text-rose-500 transition-colors">Members</a></li>
+                    <li><a href="https://x.com/TGO_RECLUTE" target="_blank" class="hover:text-rose-500 transition-colors italic">Recruit (X)</a></li>
                 </ul>
             </div>
 
@@ -461,10 +459,8 @@
     </div>
 
     <script>
-        // Initialize Lucide Icons
         lucide.createIcons();
 
-        // Toast Notification System
         function showToast(msg) {
             const toast = document.getElementById('status-toast');
             toast.querySelector('span').innerText = msg;
@@ -474,7 +470,6 @@
             }, 3000);
         }
 
-        // Parallax Scroll Effect for Hero
         window.addEventListener('scroll', () => {
             const scrolled = window.pageYOffset;
             const heroBg = document.querySelector('#home div.bg-cover');
@@ -483,7 +478,6 @@
             }
         });
 
-        // Interactive Member Cards
         document.querySelectorAll('.member-card').forEach(card => {
             card.addEventListener('click', () => {
                 const name = card.querySelector('h3').innerText;
@@ -491,7 +485,6 @@
             });
         });
 
-        // Welcome Message on Load
         window.addEventListener('load', () => {
             setTimeout(() => {
                 showToast("WELCOME TO THE YUKOKU RENGO FAN SITE");
