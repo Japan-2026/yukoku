@@ -301,7 +301,7 @@
             opacity: 0;
             animation: fadeUp 0.8s 0.4s forwards;
         }
-        .hero-title .line1 { color: var(--text); display: block; }
+        .hero-title .line1 { color: var(--text); display: block; white-space: nowrap; font-size: clamp(2rem, 9vw, 10rem); }
         .hero-title .line2 {
             display: block;
             font-size: clamp(2rem, 7.5vw, 7.5rem);
@@ -521,7 +521,7 @@
             margin-bottom: 20px;
             transition: color 0.4s;
         }
-        .principle-card:hover .principle-num { color: rgba(200,16,46,0.25); }
+        .principle-card:hover .principle-num { color: rgba(200,16,46,0.8); }
 
         .principle-kanji {
             font-family: 'Zen Antique', serif;
@@ -1202,89 +1202,6 @@
 
                 <div class="event-card reveal">
                     <div class="event-date-block">
-                        <!-- 月を変更: 例) APR / MAY / JUN など -->
-                        <span class="event-month">APR</span>
-                        <!-- 日付を変更 -->
-                        <div class="event-day">05</div>
-                        <!-- 曜日を変更: 例) SAT / SUN / MON など -->
-                        <div class="event-weekday">SAT</div>
-                    </div>
-                    <div class="event-body">
-                        <!-- イベント種別タグを変更 -->
-                        <span class="event-type-tag">街頭演説</span>
-                        <!-- イベントタイトルを変更 -->
-                        <div class="event-title">新宿駅西口 街頭演説会</div>
-                        <div class="event-meta">
-                            <!-- 開始時間を変更 -->
-                            <span>
-                                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-                                14:00〜15:30
-                            </span>
-                            <!-- 場所を変更 -->
-                            <span>
-                                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                                新宿駅西口広場（東京都新宿区）
-                            </span>
-                        </div>
-                    </div>
-                    <div class="event-status">
-                        <!-- 予定中は status-upcoming / 終了は status-ended -->
-                        <span class="status-badge status-upcoming">UPCOMING</span>
-                    </div>
-                </div>
-
-                <div class="event-card reveal reveal-delay-1">
-                    <div class="event-date-block">
-                        <span class="event-month">APR</span>
-                        <div class="event-day">19</div>
-                        <div class="event-weekday">SAT</div>
-                    </div>
-                    <div class="event-body">
-                        <span class="event-type-tag">街頭演説</span>
-                        <div class="event-title">渋谷駅ハチ公前 街頭演説会</div>
-                        <div class="event-meta">
-                            <span>
-                                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-                                13:00〜14:30
-                            </span>
-                            <span>
-                                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                                渋谷駅ハチ公前広場（東京都渋谷区）
-                            </span>
-                        </div>
-                    </div>
-                    <div class="event-status">
-                        <span class="status-badge status-upcoming">UPCOMING</span>
-                    </div>
-                </div>
-
-                <div class="event-card past reveal reveal-delay-2">
-                    <div class="event-date-block">
-                        <span class="event-month">MAR</span>
-                        <div class="event-day">15</div>
-                        <div class="event-weekday">SAT</div>
-                    </div>
-                    <div class="event-body">
-                        <span class="event-type-tag">街頭演説</span>
-                        <div class="event-title">池袋駅東口 街頭演説会</div>
-                        <div class="event-meta">
-                            <span>
-                                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-                                14:00〜15:00
-                            </span>
-                            <span>
-                                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                                池袋駅東口（東京都豊島区）
-                            </span>
-                        </div>
-                    </div>
-                    <div class="event-status">
-                        <span class="status-badge status-ended">ENDED</span>
-                    </div>
-                </div>
-
-                <div class="event-card reveal">
-                    <div class="event-date-block">
                         <span class="event-month">MAR</span>
                         <div class="event-day">22</div>
                         <div class="event-weekday">SUN</div>
@@ -1394,7 +1311,7 @@
             <div class="reveal">
                 <div class="section-header">
                     <span class="section-tag">POLITICAL ACADEMY</span>
-                    <h2 class="section-title">原口一博<span>政経塾</span></h2>
+                    <h2 class="section-title" style="white-space:nowrap;font-size:clamp(1.6rem,5vw,5rem);">原口一博<span>政経塾</span></h2>
                     <div class="section-line"></div>
                 </div>
                 <span class="academy-badge">第1期 募集中</span>
