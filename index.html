@@ -859,6 +859,31 @@
         .reveal-delay-2 { transition-delay: 0.2s; }
         .reveal-delay-3 { transition-delay: 0.3s; }
 
+        /* 申込みボタン共通スタイル */
+        .event-apply-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1rem;
+            letter-spacing: 0.2em;
+            color: #fff;
+            background: var(--red);
+            padding: 10px 20px;
+            clip-path: polygon(8px 0%, 100% 0%, calc(100% - 8px) 100%, 0% 100%);
+            text-decoration: none;
+            cursor: pointer;
+            transition: background 0.3s, transform 0.2s;
+            white-space: nowrap;
+            position: relative;
+            z-index: 10;
+        }
+        .event-apply-btn:hover {
+            background: var(--red-bright);
+            transform: translateY(-2px);
+        }
+
         /* イベントセクション */
         #events {
             background: var(--dark3);
@@ -914,12 +939,12 @@
             text-align: center;
         }
         .event-month {
-            font-size: 0.65rem;
-            letter-spacing: 0.3em;
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 2.8rem;
             color: var(--red);
-            font-weight: 700;
+            font-weight: 400;
             display: block;
-            margin-bottom: 4px;
+            line-height: 1;
         }
         .event-card.past .event-month { color: var(--text-dim); }
         .event-day {
@@ -1183,14 +1208,14 @@
 
                 <!-- ▼▼▼ イベントカード ここから ▼▼▼ -->
 
-                <div class="event-card reveal">
+                <div class="event-card reveal" style="border-left-color:var(--gold);">
                     <div class="event-date-block">
-                        <span class="event-month">MAR</span>
-                        <div class="event-day">22</div>
+                        <span class="event-month" style="color:var(--gold);">3月</span>
+                        <div class="event-day" style="color:var(--gold);">22</div>
                         <div class="event-weekday">SUN</div>
                     </div>
                     <div class="event-body">
-                        <span class="event-type-tag">映画上映・講演会</span>
+                        <span class="event-type-tag" style="color:var(--gold);border-color:rgba(201,168,76,0.5);">映画上映・講演会</span>
                         <div class="event-title">ドキュメンタリー映画「食の安全を守る人々」＆川田龍平氏トーク</div>
                         <div class="event-meta">
                             <span>
@@ -1208,10 +1233,95 @@
                         </div>
                     </div>
                     <div class="event-status" style="position:relative;z-index:10;">
-                        <a href="https://passmarket.yahoo.co.jp/event/show/detail/02tiye2gwzt41.html" target="_blank" rel="noopener noreferrer" style="display:flex;flex-direction:column;align-items:center;gap:8px;text-decoration:none;cursor:pointer;position:relative;z-index:10;">
-                            <span class="status-badge status-upcoming" style="cursor:pointer;">UPCOMING</span>
-                            <span style="font-size:0.65rem;letter-spacing:0.15em;color:var(--red);font-weight:700;border-bottom:1px solid rgba(200,16,46,0.4);cursor:pointer;">申込む →</span>
-                        </a>
+                        <div style="display:flex;flex-direction:column;align-items:center;gap:10px;">
+                            <span class="status-badge status-upcoming">UPCOMING</span>
+                            <a href="https://passmarket.yahoo.co.jp/event/show/detail/02tiye2gwzt41.html" target="_blank" rel="noopener noreferrer" class="event-apply-btn">
+                                申込む
+                                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="event-card reveal">
+                    <div class="event-date-block">
+                        <span class="event-month">4月</span>
+                        <div class="event-day" style="color:var(--red);">05</div>
+                        <div class="event-weekday">SUN</div>
+                    </div>
+                    <div class="event-body">
+                        <span class="event-type-tag">講演会</span>
+                        <div class="event-title">姫路こころざし大会</div>
+                        <div class="event-meta" style="margin-bottom:10px;">
+                            <span>
+                                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                                開場 9:15 / 開演 10:00〜19:30
+                            </span>
+                            <span>
+                                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                                姫路市民会館 大ホール（兵庫県・800名収容）
+                            </span>
+                        </div>
+                        <details style="cursor:pointer;">
+                            <summary style="font-size:0.72rem;color:var(--red);font-weight:700;letter-spacing:0.15em;list-style:none;display:inline-flex;align-items:center;gap:6px;">
+                                ▶ 登壇予定者を見る
+                            </summary>
+                            <div style="font-size:0.75rem;color:var(--text-dim);line-height:2;margin-top:8px;padding:12px;background:rgba(255,255,255,0.03);border-left:2px solid rgba(200,16,46,0.3);">
+                                原口一博（前衆議院議員）、門脇翔平（元葛飾区議会議員）、船瀬俊介（医療環境ジャーナリスト）、奥野卓志（ごぼうの党代表）、中村篤史（ナカムラクリニック院長）、池田としえ（日野市議会議員）
+                            </div>
+                        </details>
+                    </div>
+                    <div class="event-status" style="position:relative;z-index:10;">
+                        <div style="display:flex;flex-direction:column;align-items:center;gap:10px;">
+                            <span class="status-badge status-upcoming">UPCOMING</span>
+                            <a href="https://himeji-kokorozashi.peatix.com" target="_blank" rel="noopener noreferrer" class="event-apply-btn">
+                                申込む
+                                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="event-card reveal" style="border-left-color:var(--gold);">
+                    <div class="event-date-block">
+                        <span class="event-month" style="color:var(--gold);">5月</span>
+                        <div class="event-day" style="color:var(--gold);">08</div>
+                        <div class="event-weekday">FRI</div>
+                    </div>
+                    <div class="event-body">
+                        <span class="event-type-tag" style="color:var(--gold);border-color:rgba(201,168,76,0.5);">国民大集会</span>
+                        <div class="event-title" style="font-size:1.15rem;">「5.8 国民大集会」</div>
+                        <div class="event-meta" style="margin-bottom:12px;">
+                            <span>
+                                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                                第一部 9:30〜11:30
+                            </span>
+                            <span>
+                                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                                四谷区民ホール（東京都）
+                            </span>
+                        </div>
+                        <div style="font-size:0.78rem;color:var(--text-dim);line-height:1.8;margin-bottom:10px;">
+                            「自立日本」「次のパンデミックの備え」国民大会
+                        </div>
+                        <details style="cursor:pointer;">
+                            <summary style="font-size:0.72rem;color:var(--gold);font-weight:700;letter-spacing:0.15em;list-style:none;display:inline-flex;align-items:center;gap:6px;">
+                                ▶ 登壇予定者を見る
+                            </summary>
+                            <div style="font-size:0.75rem;color:var(--text-dim);line-height:2;margin-top:8px;padding:12px;background:rgba(255,255,255,0.03);border-left:2px solid rgba(201,168,76,0.3);">
+                                石田和靖（MC、作家・中東情勢アナリスト）、林千勝（近現代史研究家、WHOから命をまもる国民運動 共同代表）、荒谷卓（日本自治集団・熊野飛鳥むすびの里 代表）、仲村恵子（日本中小企業経営審議会 代表）、饗庭浩明（JCU議長）、花木秀明（北里大学・山梨大学 特任教授）、村上康文（東京理科大学名誉教授、mRNAワクチン中止を求める国民連合 副代表）、小林平大央（日本先進医療臨床研究会 理事長）、古賀真（やまと経営者連盟 代表）、ほか<br>
+                                <span style="font-size:0.68rem;color:rgba(201,168,76,0.6);">※登壇者は変更になる可能性があります。</span>
+                            </div>
+                        </details>
+                    </div>
+                    <div class="event-status" style="position:relative;z-index:10;min-width:100px;">
+                        <div style="display:flex;flex-direction:column;align-items:center;gap:10px;">
+                            <span class="status-badge status-upcoming">UPCOMING</span>
+                            <a href="https://58kokumindaishukai.peatix.com/view" target="_blank" rel="noopener noreferrer" class="event-apply-btn">
+                                申込む
+                                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                            </a>
+                        </div>
                     </div>
                 </div>
 
